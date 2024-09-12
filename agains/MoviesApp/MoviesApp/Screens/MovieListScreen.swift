@@ -9,31 +9,36 @@ import SwiftUI
 
 struct MovieListScreen: View {
     
-    @ObservedObject private var modelListVm: MovieListViewModel
-    @State private var MovieName : String = ""
+    @ObservedObject private var movieListVM: MovieListViewModel
+    @State private var movieName: String = ""
+    
     init() {
-        self.modelListVm = MovieListViewModel()
-        
+        self.movieListVM = MovieListViewModel()
     }
+    
     var body: some View {
-        VStack{
-            TextField("Search", text: $MovieName, onEditingChanged: { _ in},onCommit: {
-                self.modelListVm.searchByName(MovieName)
-            }).textFieldStyle(RoundedBorderTextFieldStyle())
-            Spacer()
-                .navigationBarTitle("Movies")
-    if self.modelListVm.loadingState == .success{
-        MovieListView(movies: self.modelListVm.movies)
-    } else if self.modelListVm.loadingState == .failed{
-        FailedView()
-    } else if self.modelListVm.loadingState == .loading{
-        LoadingView()
-    }
+        VStack {
             
-        }.embedNavigationView()
+            TextField("Search", text: $movieName, onEditingChanged: { _ in }, onCommit: {
+                // perform the search
+                self.movieListVM.searchByName(self.movieName)
+                }).textFieldStyle(RoundedBorderTextFieldStyle())
+            Spacer()
+            
+            .navigationBarTitle("Movies")
+            
+            if self.movieListVM.loadingState == .success {
+                  MovieListView(movies: self.movieListVM.movies)
+            } else if self.movieListVM.loadingState == .failed {
+                FailedView()
+            } else if self.movieListVM.loadingState == .loading {
+                LoadingView()
+            }
+          
+           
+            }.padding().embedNavigationView()
     }
 }
-
 #Preview {
     MovieListScreen()
 }

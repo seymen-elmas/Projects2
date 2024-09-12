@@ -7,17 +7,17 @@
 
 import Foundation
 
-class MovieDetailViewModel : ObservableObject {
+class MovieDetailViewModel: ObservableObject {
     
-    private var movieDetail : MovieDetail?
+    private var movieDetail: MovieDetail?
     @Published var loadingState = LoadingState.loading
     
     private var httpClient = HTTPClient()
     
     init(movieDetail: MovieDetail? = nil) {
         self.movieDetail = movieDetail
-        
     }
+    
     func getDetailsByImdbId(imdbId: String) {
         
         httpClient.getMovieDetailsBy(imdbId: imdbId) { result in
@@ -40,15 +40,18 @@ class MovieDetailViewModel : ObservableObject {
     }
     
     
-    var title :String {
-        movieDetail?.title ?? ""
+    var title: String {
+        self.movieDetail?.title ?? ""
     }
-    var poster : String {
-        movieDetail?.poster ?? ""
+    
+    var poster: String {
+        self.movieDetail?.poster ?? ""
     }
-    var plot : String {
-        movieDetail?.plot ?? ""
+    
+    var plot: String {
+        self.movieDetail?.plot ?? ""
     }
+    
     var rating: Int {
         get {
             let ratingAsDouble = Double(self.movieDetail?.imdbRating ?? "0.0")
@@ -59,4 +62,6 @@ class MovieDetailViewModel : ObservableObject {
     var director: String {
         self.movieDetail?.director ?? ""
     }
+    
 }
+
