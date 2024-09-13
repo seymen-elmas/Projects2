@@ -20,6 +20,8 @@
 		2B2EA9202C92F2350009C5D5 /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA91F2C92F2350009C5D5 /* AccountListView.swift */; };
 		2B2EA9222C9300C60009C5D5 /* CreateAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA9212C9300C60009C5D5 /* CreateAccountRequest.swift */; };
 		2B2EA9242C9300EA0009C5D5 /* CreateAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA9232C9300EA0009C5D5 /* CreateAccountResponse.swift */; };
+		2B2EA9262C93053A0009C5D5 /* AddAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA9252C93053A0009C5D5 /* AddAccountViewModel.swift */; };
+		2B2EA9282C94020B0009C5D5 /* AddAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA9272C94020B0009C5D5 /* AddAccountScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		2B2EA91F2C92F2350009C5D5 /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
 		2B2EA9212C9300C60009C5D5 /* CreateAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRequest.swift; sourceTree = "<group>"; };
 		2B2EA9232C9300EA0009C5D5 /* CreateAccountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountResponse.swift; sourceTree = "<group>"; };
+		2B2EA9252C93053A0009C5D5 /* AddAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewModel.swift; sourceTree = "<group>"; };
+		2B2EA9272C94020B0009C5D5 /* AddAccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				2B2EA9192C92DCB50009C5D5 /* AccountSummaryViewModel.swift */,
+				2B2EA9252C93053A0009C5D5 /* AddAccountViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				2B2EA91C2C92ED1C0009C5D5 /* AccountSummaryScreen.swift */,
+				2B2EA9272C94020B0009C5D5 /* AddAccountScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -218,9 +224,11 @@
 				2B2EA90F2C92D3CC0009C5D5 /* URL+Extensions.swift in Sources */,
 				2B2EA9242C9300EA0009C5D5 /* CreateAccountResponse.swift in Sources */,
 				2B2EA9112C92D3E50009C5D5 /* View+Extensions.swift in Sources */,
+				2B2EA9262C93053A0009C5D5 /* AddAccountViewModel.swift in Sources */,
 				2B2EA9172C92D8B00009C5D5 /* AccountService.swift in Sources */,
 				2B2EA8FE2C92D3740009C5D5 /* BankAppApp.swift in Sources */,
 				2B2EA9142C92D6820009C5D5 /* Account.swift in Sources */,
+				2B2EA9282C94020B0009C5D5 /* AddAccountScreen.swift in Sources */,
 				2B2EA91A2C92DCB50009C5D5 /* AccountSummaryViewModel.swift in Sources */,
 				2B2EA9222C9300C60009C5D5 /* CreateAccountRequest.swift in Sources */,
 			);
