@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B2EA9752C95FCE40009C5D5 /* CircleLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA9742C95FCE40009C5D5 /* CircleLoaderView.swift */; };
 		2B62D8E92C921DD400D94C63 /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B62D8E82C921DD400D94C63 /* MovieDetailViewModel.swift */; };
 		2B62D8EB2C9221E500D94C63 /* MovieDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B62D8EA2C9221E500D94C63 /* MovieDetailScreen.swift */; };
 		2B62D8ED2C92225100D94C63 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B62D8EC2C92225100D94C63 /* MovieDetailView.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B2EA9742C95FCE40009C5D5 /* CircleLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLoaderView.swift; sourceTree = "<group>"; };
 		2B62D8E82C921DD400D94C63 /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
 		2B62D8EA2C9221E500D94C63 /* MovieDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailScreen.swift; sourceTree = "<group>"; };
 		2B62D8EC2C92225100D94C63 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				2BFABE4C2C92073C0064705F /* FailedView.swift */,
 				2BFABE4E2C92074B0064705F /* LoadingView.swift */,
 				2B62D8EC2C92225100D94C63 /* MovieDetailView.swift */,
+				2B2EA9742C95FCE40009C5D5 /* CircleLoaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				2BFABE412C91A8500064705F /* ViewModelBase.swift in Sources */,
 				2BFABE492C91B4E10064705F /* MovieListView.swift in Sources */,
 				2BFABE1D2C919B3B0064705F /* MoviesAppApp.swift in Sources */,
+				2B2EA9752C95FCE40009C5D5 /* CircleLoaderView.swift in Sources */,
 				2B62D8E92C921DD400D94C63 /* MovieDetailViewModel.swift in Sources */,
 				2B62D8ED2C92225100D94C63 /* MovieDetailView.swift in Sources */,
 				2BFABE432C91A88F0064705F /* MovieListViewModel.swift in Sources */,

@@ -32,7 +32,8 @@ struct MovieListScreen: View {
             } else if self.movieListVM.loadingState == .failed {
                 FailedView()
             } else if self.movieListVM.loadingState == .loading {
-                LoadingView()
+                 CircleLoader()
+                 LoadingView()
             }
           
            
