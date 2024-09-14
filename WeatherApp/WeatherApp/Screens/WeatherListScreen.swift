@@ -7,17 +7,21 @@
 
 import SwiftUI
 
-enum Sheets : Identifiable {
-    var id : UUID {
+enum Sheets: Identifiable {
+    
+    var id: UUID {
         return UUID()
     }
+    
     case addNewCity
-    case Settings
+    case settings
 }
 
 struct WeatherListScreen: View {
-    @State private var isActiveSheet : Sheets?
-    @EnvironmentObject var store : Store
+
+    @EnvironmentObject var store: Store
+    @State private var activeSheet: Sheets?
+    
     var body: some View {
         
         List {
@@ -26,22 +30,22 @@ struct WeatherListScreen: View {
             }
             }
         .listStyle(PlainListStyle())
-        .sheet(item: $isActiveSheet, content: { (item)  in
+        
+        .sheet(item: $activeSheet, content: { (item) in
             switch item {
-            case.addNewCity:
-                AddCityScreen().environmentObject(store)
-            case.Settings :
-                SettingsScreen()
+                case .addNewCity:
+                    AddCityScreen().environmentObject(store)
+                case .settings:
+                    SettingsScreen().environmentObject(store)
             }
         })
         
         .navigationBarItems(leading: Button(action: {
-            isActiveSheet = .Settings
+            activeSheet = .settings
         }) {
             Image(systemName: "gearshape")
         }, trailing: Button(action: {
-            isActiveSheet = .addNewCity
-            
+            activeSheet = .addNewCity
         }, label: {
             Image(systemName: "plus")
         }))
@@ -50,19 +54,18 @@ struct WeatherListScreen: View {
        
     }
 }
+
 #Preview {
-    WeatherListScreen()
+    WeatherListScreen().environmentObject(Store())
 }
 
-struct WeatherListScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        return WeatherListScreen().environmentObject(Store())
-    }
-}
+
 
 struct WeatherCell: View {
     
-    let weather : WeatherViewModel
+    @EnvironmentObject var store: Store
+    let weather: WeatherViewModel
+    
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 15) {
@@ -78,9 +81,10 @@ struct WeatherCell: View {
                 }
             }
             Spacer()
+            URLImage(url: Constants.Urls.weatherUrlAsStringByIcon(icon: weather.icon))
+                .frame(width: 50, height: 50)
             
-            
-            Text("\(Int(weather.temperature)) K")
+            Text("\(Int(weather.getTemperatureByUnit(unit: store.selectedUnit))) \(String(store.selectedUnit.displayText.prefix(1)))")
         }
         .padding()
         .background(Color(#colorLiteral(red: 0.9133135676, green: 0.9335765243, blue: 0.98070997, alpha: 1)))

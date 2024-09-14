@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct AddCityScreen: View {
-    @EnvironmentObject var store : Store
+    
+    @EnvironmentObject var store: Store
     @Environment(\.presentationMode) private var presentationMode
     @StateObject private var addWeatherVM = AddWeatherViewModel()
     
@@ -24,7 +25,6 @@ struct AddCityScreen: View {
                         store.addWeather(weather)
                         presentationMode.wrappedValue.dismiss()
                     }
-                   
                     
                 }.padding(10)
                 .frame(maxWidth: UIScreen.main.bounds.width/4)
@@ -43,6 +43,7 @@ struct AddCityScreen: View {
     }
 }
 
+
 #Preview {
-    AddCityScreen()
+    AddCityScreen().environmentObject(Store())
 }
