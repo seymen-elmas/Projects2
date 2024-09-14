@@ -11,15 +11,19 @@ class TransferFundsViewModel: ObservableObject {
     
     var fromAccount: AccountViewModel?
     var toAccount: AccountViewModel?
+    
     @Published var message: String?
     @Published var accounts: [AccountViewModel] = [AccountViewModel]()
-    var amount : String = ""
-    var isAmountValid : Bool {
+    var amount: String = ""
+    
+    var isAmountValid: Bool {
         guard let userAmount = Double(amount) else {
             return false
         }
+        
         return userAmount <= 0 ? false : true
     }
+    
     var filteredAccounts: [AccountViewModel] {
         
         if self.fromAccount == nil {
@@ -38,7 +42,6 @@ class TransferFundsViewModel: ObservableObject {
         
     }
     
-
     
     var fromAccountType: String {
         fromAccount != nil ? fromAccount!.accountType : ""
@@ -47,6 +50,7 @@ class TransferFundsViewModel: ObservableObject {
     var toAccountType: String {
         toAccount != nil ? toAccount!.accountType : ""
     }
+    
     private func isValid() -> Bool {
         return isAmountValid
     }

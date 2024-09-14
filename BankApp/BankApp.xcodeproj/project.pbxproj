@@ -26,6 +26,7 @@
 		2B2EA92C2C946A9A0009C5D5 /* TransferFundsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA92B2C946A9A0009C5D5 /* TransferFundsResponse.swift */; };
 		2B2EA92E2C946B880009C5D5 /* TransferFundsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA92D2C946B880009C5D5 /* TransferFundsViewModel.swift */; };
 		2B2EA9302C946D930009C5D5 /* TransferFoundsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA92F2C946D930009C5D5 /* TransferFoundsScreen.swift */; };
+		2B2EA9322C9581050009C5D5 /* TransferFundsAccountSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA9312C9581050009C5D5 /* TransferFundsAccountSelectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		2B2EA92B2C946A9A0009C5D5 /* TransferFundsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFundsResponse.swift; sourceTree = "<group>"; };
 		2B2EA92D2C946B880009C5D5 /* TransferFundsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFundsViewModel.swift; sourceTree = "<group>"; };
 		2B2EA92F2C946D930009C5D5 /* TransferFoundsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFoundsScreen.swift; sourceTree = "<group>"; };
+		2B2EA9312C9581050009C5D5 /* TransferFundsAccountSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFundsAccountSelectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				2B2EA91F2C92F2350009C5D5 /* AccountListView.swift */,
+				2B2EA9312C9581050009C5D5 /* TransferFundsAccountSelectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				2B2EA9112C92D3E50009C5D5 /* View+Extensions.swift in Sources */,
 				2B2EA9262C93053A0009C5D5 /* AddAccountViewModel.swift in Sources */,
 				2B2EA92E2C946B880009C5D5 /* TransferFundsViewModel.swift in Sources */,
+				2B2EA9322C9581050009C5D5 /* TransferFundsAccountSelectionView.swift in Sources */,
 				2B2EA9172C92D8B00009C5D5 /* AccountService.swift in Sources */,
 				2B2EA8FE2C92D3740009C5D5 /* BankAppApp.swift in Sources */,
 				2B2EA9142C92D6820009C5D5 /* Account.swift in Sources */,
