@@ -16,6 +16,7 @@
 		2B2EAA232C98443E0009C5D5 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EAA222C98443E0009C5D5 /* Webservice.swift */; };
 		2B2EAA262C9847C10009C5D5 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EAA252C9847C10009C5D5 /* Article.swift */; };
 		2B2EAA2A2C9850530009C5D5 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EAA292C9850530009C5D5 /* ArticleViewModel.swift */; };
+		2B2EAA2F2C9AB9F80009C5D5 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EAA2E2C9AB9F80009C5D5 /* ArticleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2B2EAA222C98443E0009C5D5 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		2B2EAA252C9847C10009C5D5 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		2B2EAA292C9850530009C5D5 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		2B2EAA2E2C9AB9F80009C5D5 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		2B2EAA092C982BD80009C5D5 /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				2B2EAA2B2C9AB78B0009C5D5 /* Cells */,
 				2B2EAA282C9850010009C5D5 /* ViewModels */,
 				2B2EAA242C9847A80009C5D5 /* Models */,
 				2B2EAA1F2C982C230009C5D5 /* Services */,
@@ -106,6 +109,14 @@
 				2B2EAA292C9850530009C5D5 /* ArticleViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2B2EAA2B2C9AB78B0009C5D5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2B2EAA2E2C9AB9F80009C5D5 /* ArticleTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 				2B2EAA232C98443E0009C5D5 /* Webservice.swift in Sources */,
 				2B2EAA2A2C9850530009C5D5 /* ArticleViewModel.swift in Sources */,
 				2B2EAA0D2C982BD80009C5D5 /* SceneDelegate.swift in Sources */,
+				2B2EAA2F2C9AB9F80009C5D5 /* ArticleTableViewCell.swift in Sources */,
 				2B2EAA262C9847C10009C5D5 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
