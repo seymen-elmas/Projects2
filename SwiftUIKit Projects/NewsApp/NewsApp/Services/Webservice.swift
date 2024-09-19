@@ -3,10 +3,8 @@
 //  NewsApp
 //
 //  Created by Seymen Nadir Elmas on 16.09.2024.
-//A
 
 import Foundation
-
 
 class Webservice {
     
@@ -34,4 +32,3 @@ class Webservice {
     }
     
 }
-

@@ -17,6 +17,7 @@
 		2B2EAA982C9B08D10009C5D5 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EAA972C9B08D10009C5D5 /* Webservice.swift */; };
 		2B2EAA9B2C9B0F170009C5D5 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EAA9A2C9B0F170009C5D5 /* Order.swift */; };
 		2B2EAA9E2C9B4A4B0009C5D5 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EAA9D2C9B4A4B0009C5D5 /* OrderViewModel.swift */; };
+		2B2EAAA02C9B57FC0009C5D5 /* AddCoffeOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EAA9F2C9B57FC0009C5D5 /* AddCoffeOrderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		2B2EAA972C9B08D10009C5D5 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		2B2EAA9A2C9B0F170009C5D5 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		2B2EAA9D2C9B4A4B0009C5D5 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		2B2EAA9F2C9B57FC0009C5D5 /* AddCoffeOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeOrderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				2B2EAA9D2C9B4A4B0009C5D5 /* OrderViewModel.swift */,
+				2B2EAA9F2C9B57FC0009C5D5 /* AddCoffeOrderViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				2B2EAA9B2C9B0F170009C5D5 /* Order.swift in Sources */,
 				2B2EAA7E2C9AE02C0009C5D5 /* AppDelegate.swift in Sources */,
 				2B2EAA802C9AE02C0009C5D5 /* SceneDelegate.swift in Sources */,
+				2B2EAAA02C9B57FC0009C5D5 /* AddCoffeOrderViewModel.swift in Sources */,
 				2B2EAA932C9AE32E0009C5D5 /* OrdersTableViewController.swift in Sources */,
 				2B2EAA982C9B08D10009C5D5 /* Webservice.swift in Sources */,
 				2B2EAA9E2C9B4A4B0009C5D5 /* OrderViewModel.swift in Sources */,
