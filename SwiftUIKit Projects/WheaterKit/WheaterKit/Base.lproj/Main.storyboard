@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iK4-Ru-3F1">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WheaterKit-->
+        <scene sceneID="BPy-dA-ILe">
+            <objects>
+                <tableViewController id="qGM-7n-yU7" customClass="WheaterListTableViewController" customModule="WheaterKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Ydy-wi-JL3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mIj-bk-1AX">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mIj-bk-1AX" id="Fll-2L-itY">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qGM-7n-yU7" id="2G3-4D-uzT"/>
+                            <outlet property="delegate" destination="qGM-7n-yU7" id="osX-BH-r7j"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="WheaterKit" id="2L3-Zt-ewA">
+                        <barButtonItem key="leftBarButtonItem" title="Settings" id="e6c-N8-Ztf"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="t7s-M5-oq8">
+                            <connections>
+                                <segue destination="bco-G8-sbi" kind="presentation" id="O2O-lh-49C"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="usR-Hz-zkd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="777.86259541984725" y="-56.338028169014088"/>
+        </scene>
+        <!--Add City-->
+        <scene sceneID="Utb-zn-CPM">
+            <objects>
+                <viewController id="Aju-3Y-Zc3" customClass="AddWheaterCityViewController" customModule="WheaterKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L5o-ag-xia">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lcb-7I-eVy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add City" id="eoD-JG-OBk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B7e-67-6Zq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2657.2519083969464" y="-56.338028169014088"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="u20-0m-UX4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iK4-Ru-3F1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VAt-6m-zrx">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qGM-7n-yU7" kind="relationship" relationship="rootViewController" id="Q61-jM-2Eq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QZX-0H-iug" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-148.85496183206106" y="-56.338028169014088"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kTX-Ra-e3f">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bco-G8-sbi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bY3-3Q-NEj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Aju-3Y-Zc3" kind="relationship" relationship="rootViewController" id="Tjf-IE-SaX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8iI-RG-aIA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1730.534351145038" y="-56.338028169014088"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

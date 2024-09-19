@@ -7,12 +7,13 @@
 
 import Foundation
 
-struct ArticleList: Codable {
+struct ArticleList: Decodable {
     let articles: [Article]
 }
 
-struct Article: Codable {
+struct Article: Decodable {
     let title: String
     let description: String
 }
+
 
