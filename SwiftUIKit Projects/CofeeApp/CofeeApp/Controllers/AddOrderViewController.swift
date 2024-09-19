@@ -8,14 +8,23 @@
 import Foundation
 import UIKit
 
+
+protocol AddCofeeOrderDelegate {
+    func addCofeeOrderViewControllerDidSave(order : Order , controller : UIViewController)
+    func addCofeeOrderViewControllerDidClose(controller : UIViewController)
+    
+}
+
 class AddOrderViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var delegate : AddCofeeOrderDelegate?
     private var vm = AddCoffeeOrderViewModel()
-    
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var nameTextField : UITextField!
-    @IBOutlet weak var emailTextField : UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    
     private var coffeeSizesSegmentedControl: UISegmentedControl!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +68,11 @@ class AddOrderViewController: UIViewController, UITableViewDelegate, UITableView
         cell.textLabel?.text = self.vm.types[indexPath.row]
         return cell
     }
+    @IBAction func close() {
+        if let delegate = self.delegate {
+            delegate.addCofeeOrderViewControllerDidClose(controller: self)
+        }
+    }
     @IBAction func save() {
         
         let name = self.nameTextField.text
@@ -76,8 +90,24 @@ class AddOrderViewController: UIViewController, UITableViewDelegate, UITableView
         self.vm.selectedSize = selectedSize
         self.vm.selectedType = self.vm.types[indexPath.row]
         
+        Webservice().load(resource: Order.create(vm: self.vm)) { result in
+            switch result {
+            case .success(let order):
+                if let order = order , let delegate = self.delegate{
+                    DispatchQueue.main.async {
+                        delegate.addCofeeOrderViewControllerDidSave(order: order, controller: self)
+                    }
+                }
+                
+            case .failure(let error):
+                print(error)
+                
+            }
+        }
+        
         
         
     }
     
 }
+
