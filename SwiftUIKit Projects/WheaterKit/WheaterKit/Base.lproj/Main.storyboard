@@ -169,7 +169,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" id="hgf-ln-S79">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="0br-qb-HDT"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="0br-qb-HDT">
+                            <connections>
+                                <action selector="done" destination="kxs-65-pAr" id="14c-h8-gKM"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5QS-oO-PJA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

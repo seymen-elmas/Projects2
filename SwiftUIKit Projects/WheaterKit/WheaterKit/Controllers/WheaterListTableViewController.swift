@@ -10,10 +10,14 @@ import UIKit
 
 class WheaterListTableViewController : UITableViewController ,AddWeatherDelegate{
     private var wheaterListViewModel = WheaterListViewModel()
+    private var lastUnitSelection: Unit!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.prefersLargeTitles = true
-       
+        let userDefaults = UserDefaults.standard
+        if let value = userDefaults.value(forKey: "unit") as? String {
+            self.lastUnitSelection = Unit(rawValue: value)!
+        }
     }
     func addWeatherDidSave(vm: WheaterViewModel) {
         wheaterListViewModel.addWheaterViewModels(vm)
@@ -39,10 +43,24 @@ class WheaterListTableViewController : UITableViewController ,AddWeatherDelegate
         
         if segue.identifier == "AddWheaterCityViewController" {
             prepareSegueForAddWheaterCityViewController(segue: segue)
+        }else if segue.identifier == "SettingTableViewController"{
+            prepareSegueForSettingTableViewController(segue: segue)
         }
         
     }
-    
+    private func prepareSegueForSettingTableViewController(segue: UIStoryboardSegue) {
+           
+           guard let nav = segue.destination as? UINavigationController else {
+               fatalError("NavigationController not found")
+           }
+           
+           guard let settingsTVC = nav.viewControllers.first as? SettingTableViewController else {
+               fatalError("SettingTableViewController not found")
+           }
+           
+           settingsTVC.delegate = self
+           
+       }
     func prepareSegueForAddWheaterCityViewController(segue: UIStoryboardSegue) {
         
         guard let nav = segue.destination as? UINavigationController else {
@@ -55,4 +73,14 @@ class WheaterListTableViewController : UITableViewController ,AddWeatherDelegate
         
         addWheaterCityVC.delegate = self
     }
+}
+extension WheaterListTableViewController :SettingDelegate {
+    func settingsDone(vm: SettingsViewModel) {
+        if lastUnitSelection.rawValue != vm.selectedUnit.rawValue {
+            wheaterListViewModel.updateUnit(to: vm.selectedUnit)
+            tableView.reloadData()
+            lastUnitSelection = Unit(rawValue: vm.selectedUnit.rawValue)!
+        }
+    }
+    
 }

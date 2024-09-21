@@ -33,18 +33,16 @@ class SettingsViewModel {
     var selectedUnit: Unit {
         get {
             let userDefaults = UserDefaults.standard
-            if let value = userDefaults.value(forKey: "unit") as? String, let unit = Unit(rawValue: value) {
-                return unit
+            var unitValue = ""
+            if let value = userDefaults.value(forKey: "unit") as? String {
+                unitValue = value
             }
-            // Varsayılan değer olarak Celsius döndürüyoruz
-            return .celsius
+            return Unit(rawValue: unitValue)!
         }
         set {
-            let userDefaults = UserDefaults.standard
-            userDefaults.set(newValue.rawValue, forKey: "unit")
+            let userDefault = UserDefaults.standard
+            userDefault.set(newValue.rawValue, forKey: "unit")
         }
     }
-}
-
     
-
+}
