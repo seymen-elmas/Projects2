@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B2674852C9D3AAC00B955E2 /* WheaterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2674842C9D3A9B00B955E2 /* WheaterCell.swift */; };
+		2B2674882C9D6F3300B955E2 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2674872C9D6EF700B955E2 /* Webservice.swift */; };
+		2B26748C2C9D78E200B955E2 /* WheaterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26748A2C9D78B700B955E2 /* WheaterResponse.swift */; };
+		2B26748F2C9D81DD00B955E2 /* AddWheaterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26748E2C9D81CA00B955E2 /* AddWheaterViewModel.swift */; };
+		2B2674922C9D829E00B955E2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2674912C9D829800B955E2 /* Constants.swift */; };
+		2B2674962C9D861000B955E2 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2674952C9D85FE00B955E2 /* String+Extension.swift */; };
+		2B2674982C9D8CEE00B955E2 /* WheaterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2674972C9D8CE000B955E2 /* WheaterListViewModel.swift */; };
+		2B26749A2C9E83E800B955E2 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2674992C9E83D800B955E2 /* Double+Extension.swift */; };
+		2B26749C2C9E99E000B955E2 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26749B2C9E99CF00B955E2 /* SettingTableViewController.swift */; };
+		2B26749E2C9E9B5B00B955E2 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26749D2C9E9B5100B955E2 /* SettingsViewModel.swift */; };
 		2B2EAAAE2C9C30BA0009C5D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EAAAD2C9C30BA0009C5D5 /* AppDelegate.swift */; };
 		2B2EAAB02C9C30BA0009C5D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EAAAF2C9C30BA0009C5D5 /* SceneDelegate.swift */; };
 		2B2EAAB52C9C30BA0009C5D5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2B2EAAB42C9C30BA0009C5D5 /* Base */; };
@@ -17,6 +27,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B2674842C9D3A9B00B955E2 /* WheaterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheaterCell.swift; sourceTree = "<group>"; };
+		2B2674872C9D6EF700B955E2 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		2B26748A2C9D78B700B955E2 /* WheaterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheaterResponse.swift; sourceTree = "<group>"; };
+		2B26748E2C9D81CA00B955E2 /* AddWheaterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWheaterViewModel.swift; sourceTree = "<group>"; };
+		2B2674912C9D829800B955E2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2B2674952C9D85FE00B955E2 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		2B2674972C9D8CE000B955E2 /* WheaterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheaterListViewModel.swift; sourceTree = "<group>"; };
+		2B2674992C9E83D800B955E2 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		2B26749B2C9E99CF00B955E2 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		2B26749D2C9E9B5100B955E2 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		2B2EAAAA2C9C30BA0009C5D5 /* WheaterKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheaterKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B2EAAAD2C9C30BA0009C5D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B2EAAAF2C9C30BA0009C5D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +59,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B2674832C9D3A4500B955E2 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				2B2674842C9D3A9B00B955E2 /* WheaterCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		2B2674862C9D6ED700B955E2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2B2674872C9D6EF700B955E2 /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2B26748D2C9D813E00B955E2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2B26749D2C9E9B5100B955E2 /* SettingsViewModel.swift */,
+				2B2674972C9D8CE000B955E2 /* WheaterListViewModel.swift */,
+				2B26748E2C9D81CA00B955E2 /* AddWheaterViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2B2674902C9D828B00B955E2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2B2674912C9D829800B955E2 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2B2674932C9D847200B955E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B26748A2C9D78B700B955E2 /* WheaterResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2B2674942C9D85F400B955E2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2B2674992C9E83D800B955E2 /* Double+Extension.swift */,
+				2B2674952C9D85FE00B955E2 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		2B2EAAA12C9C30BA0009C5D5 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +129,12 @@
 		2B2EAAAC2C9C30BA0009C5D5 /* WheaterKit */ = {
 			isa = PBXGroup;
 			children = (
+				2B2674942C9D85F400B955E2 /* Extensions */,
+				2B2674902C9D828B00B955E2 /* Utils */,
+				2B2674932C9D847200B955E2 /* Models */,
+				2B26748D2C9D813E00B955E2 /* ViewModels */,
+				2B2674862C9D6ED700B955E2 /* Services */,
+				2B2674832C9D3A4500B955E2 /* CustomCells */,
 				2B2EAAC12C9C3CE00009C5D5 /* Controllers */,
 				2B2EAAAD2C9C30BA0009C5D5 /* AppDelegate.swift */,
 				2B2EAAAF2C9C30BA0009C5D5 /* SceneDelegate.swift */,
@@ -72,6 +149,7 @@
 		2B2EAAC12C9C3CE00009C5D5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2B26749B2C9E99CF00B955E2 /* SettingTableViewController.swift */,
 				2B2EAAC22C9C3D1D0009C5D5 /* WheaterListTableViewController.swift */,
 				2B2EAAC42C9C3D9C0009C5D5 /* AddWheaterCityViewController.swift */,
 			);
@@ -150,9 +228,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B2EAAAE2C9C30BA0009C5D5 /* AppDelegate.swift in Sources */,
+				2B26749C2C9E99E000B955E2 /* SettingTableViewController.swift in Sources */,
+				2B26748F2C9D81DD00B955E2 /* AddWheaterViewModel.swift in Sources */,
 				2B2EAAC32C9C3D1D0009C5D5 /* WheaterListTableViewController.swift in Sources */,
+				2B2674882C9D6F3300B955E2 /* Webservice.swift in Sources */,
+				2B26748C2C9D78E200B955E2 /* WheaterResponse.swift in Sources */,
+				2B2674982C9D8CEE00B955E2 /* WheaterListViewModel.swift in Sources */,
+				2B2674852C9D3AAC00B955E2 /* WheaterCell.swift in Sources */,
 				2B2EAAC52C9C3D9C0009C5D5 /* AddWheaterCityViewController.swift in Sources */,
+				2B26749A2C9E83E800B955E2 /* Double+Extension.swift in Sources */,
 				2B2EAAB02C9C30BA0009C5D5 /* SceneDelegate.swift in Sources */,
+				2B2674962C9D861000B955E2 /* String+Extension.swift in Sources */,
+				2B2674922C9D829E00B955E2 /* Constants.swift in Sources */,
+				2B26749E2C9E9B5B00B955E2 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,8 +398,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,8 +428,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
