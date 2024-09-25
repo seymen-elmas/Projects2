@@ -9,10 +9,8 @@ import CoreData
 
 class DataController: ObservableObject {
     let container: NSPersistentCloudKitContainer
-    
-    
-    @Published var selectedFilter: Filter? = Filter.all
 
+    @Published var selectedFilter: Filter? = Filter.all
 
     static var preview: DataController = {
         let dataController = DataController(inMemory: true)
@@ -27,11 +25,21 @@ class DataController: ObservableObject {
             container.persistentStoreDescriptions.first?.url = URL(filePath: "/dev/null")
         }
 
+        container.viewContext.automaticallyMergesChangesFromParent = true
+        container.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
+
+        container.persistentStoreDescriptions.first?.setOption(true as NSNumber, forKey: NSPersistentStoreRemoteChangeNotificationPostOptionKey)
+        NotificationCenter.default.addObserver(forName: .NSPersistentStoreRemoteChange, object: container.persistentStoreCoordinator, queue: .main, using: remoteStoreChanged)
+
         container.loadPersistentStores { storeDescription, error in
             if let error {
                 fatalError("Fatal error loading store: \(error.localizedDescription)")
             }
         }
+    }
+
+    func remoteStoreChanged(_ notification: Notification) {
+        objectWillChange.send()
     }
 
     func createSampleData() {
@@ -46,8 +54,8 @@ class DataController: ObservableObject {
                 let issue = Issue(context: viewContext)
                 issue.title = "Issue \(i)-\(j)"
                 issue.content = "Description goes here"
-                issue.cretaionDate = .now
-                issue.complated = Bool.random()
+                issue.creationDate = .now
+                issue.completed = Bool.random()
                 issue.priority = Int16.random(in: 0...2)
                 tag.addToIssues(issue)
             }
