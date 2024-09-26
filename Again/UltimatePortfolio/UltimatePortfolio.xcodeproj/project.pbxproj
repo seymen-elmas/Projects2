@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		2B2677B22CA5326E00B955E2 /* UltimatePortfolio2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimatePortfolio2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B2678252CA5737B00B955E2 /* UltimatePortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimatePortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		2B2677B42CA5326E00B955E2 /* UltimatePortfolio2 */ = {
+		2B2678272CA5737B00B955E2 /* UltimatePortfolio */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = UltimatePortfolio2;
+			path = UltimatePortfolio;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2B2677AF2CA5326E00B955E2 /* Frameworks */ = {
+		2B2678222CA5737B00B955E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,18 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B2677A92CA5326E00B955E2 = {
+		2B26781C2CA5737B00B955E2 = {
 			isa = PBXGroup;
 			children = (
-				2B2677B42CA5326E00B955E2 /* UltimatePortfolio2 */,
-				2B2677B32CA5326E00B955E2 /* Products */,
+				2B2678272CA5737B00B955E2 /* UltimatePortfolio */,
+				2B2678262CA5737B00B955E2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2B2677B32CA5326E00B955E2 /* Products */ = {
+		2B2678262CA5737B00B955E2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B2677B22CA5326E00B955E2 /* UltimatePortfolio2.app */,
+				2B2678252CA5737B00B955E2 /* UltimatePortfolio.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,64 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2B2677B12CA5326E00B955E2 /* UltimatePortfolio2 */ = {
+		2B2678242CA5737B00B955E2 /* UltimatePortfolio */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B2677C62CA5327100B955E2 /* Build configuration list for PBXNativeTarget "UltimatePortfolio2" */;
+			buildConfigurationList = 2B2678392CA5737E00B955E2 /* Build configuration list for PBXNativeTarget "UltimatePortfolio" */;
 			buildPhases = (
-				2B2677AE2CA5326E00B955E2 /* Sources */,
-				2B2677AF2CA5326E00B955E2 /* Frameworks */,
-				2B2677B02CA5326E00B955E2 /* Resources */,
+				2B2678212CA5737B00B955E2 /* Sources */,
+				2B2678222CA5737B00B955E2 /* Frameworks */,
+				2B2678232CA5737B00B955E2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				2B2677B42CA5326E00B955E2 /* UltimatePortfolio2 */,
+				2B2678272CA5737B00B955E2 /* UltimatePortfolio */,
 			);
-			name = UltimatePortfolio2;
+			name = UltimatePortfolio;
 			packageProductDependencies = (
 			);
-			productName = UltimatePortfolio2;
-			productReference = 2B2677B22CA5326E00B955E2 /* UltimatePortfolio2.app */;
+			productName = UltimatePortfolio;
+			productReference = 2B2678252CA5737B00B955E2 /* UltimatePortfolio.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2B2677AA2CA5326E00B955E2 /* Project object */ = {
+		2B26781D2CA5737B00B955E2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					2B2677B12CA5326E00B955E2 = {
+					2B2678242CA5737B00B955E2 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
-			buildConfigurationList = 2B2677AD2CA5326E00B955E2 /* Build configuration list for PBXProject "UltimatePortfolio2" */;
+			buildConfigurationList = 2B2678202CA5737B00B955E2 /* Build configuration list for PBXProject "UltimatePortfolio" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 2B2677A92CA5326E00B955E2;
+			mainGroup = 2B26781C2CA5737B00B955E2;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 2B2677B32CA5326E00B955E2 /* Products */;
+			productRefGroup = 2B2678262CA5737B00B955E2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2B2677B12CA5326E00B955E2 /* UltimatePortfolio2 */,
+				2B2678242CA5737B00B955E2 /* UltimatePortfolio */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2B2677B02CA5326E00B955E2 /* Resources */ = {
+		2B2678232CA5737B00B955E2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2B2677AE2CA5326E00B955E2 /* Sources */ = {
+		2B2678212CA5737B00B955E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2B2677C42CA5327100B955E2 /* Debug */ = {
+		2B2678372CA5737E00B955E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -186,7 +186,7 @@
 			};
 			name = Debug;
 		};
-		2B2677C52CA5327100B955E2 /* Release */ = {
+		2B2678382CA5737E00B955E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -239,15 +239,15 @@
 			};
 			name = Release;
 		};
-		2B2677C72CA5327100B955E2 /* Debug */ = {
+		2B26783A2CA5737E00B955E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio2/UltimatePortfolio2.entitlements;
+				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/UltimatePortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio2/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = 9N245B334X;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -262,12 +262,12 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.seymenelmas.UltimatePortfolio2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seymenelmas.UltimatePortfolio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -278,15 +278,15 @@
 			};
 			name = Debug;
 		};
-		2B2677C82CA5327100B955E2 /* Release */ = {
+		2B26783B2CA5737E00B955E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio2/UltimatePortfolio2.entitlements;
+				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/UltimatePortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio2/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = 9N245B334X;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -301,12 +301,12 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.seymenelmas.UltimatePortfolio2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seymenelmas.UltimatePortfolio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -320,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2B2677AD2CA5326E00B955E2 /* Build configuration list for PBXProject "UltimatePortfolio2" */ = {
+		2B2678202CA5737B00B955E2 /* Build configuration list for PBXProject "UltimatePortfolio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B2677C42CA5327100B955E2 /* Debug */,
-				2B2677C52CA5327100B955E2 /* Release */,
+				2B2678372CA5737E00B955E2 /* Debug */,
+				2B2678382CA5737E00B955E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2B2677C62CA5327100B955E2 /* Build configuration list for PBXNativeTarget "UltimatePortfolio2" */ = {
+		2B2678392CA5737E00B955E2 /* Build configuration list for PBXNativeTarget "UltimatePortfolio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B2677C72CA5327100B955E2 /* Debug */,
-				2B2677C82CA5327100B955E2 /* Release */,
+				2B26783A2CA5737E00B955E2 /* Debug */,
+				2B26783B2CA5737E00B955E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2B2677AA2CA5326E00B955E2 /* Project object */;
+	rootObject = 2B26781D2CA5737B00B955E2 /* Project object */;
 }
