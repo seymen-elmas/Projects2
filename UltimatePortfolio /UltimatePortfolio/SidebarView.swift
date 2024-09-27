@@ -63,3 +63,4 @@ struct SidebarView_Previews: PreviewProvider {
             .environmentObject(DataController.preview)
     }
 }
+
