@@ -6,14 +6,9 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		2BAB718E2CA80C44004645FB /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB718D2CA80C44004645FB /* Bundle-Decodable.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		2B2676202CA15EAD00B955E2 /* UltimatePortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimatePortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BAB70882CA68943004645FB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
-		2BAB718D2CA80C44004645FB /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -51,7 +46,6 @@
 		2B2676172CA15EAD00B955E2 = {
 			isa = PBXGroup;
 			children = (
-				2BAB718D2CA80C44004645FB /* Bundle-Decodable.swift */,
 				2B2676222CA15EAD00B955E2 /* UltimatePortfolio */,
 				2BAB70872CA68943004645FB /* Frameworks */,
 				2B2676212CA15EAD00B955E2 /* Products */,
@@ -148,7 +142,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BAB718E2CA80C44004645FB /* Bundle-Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
