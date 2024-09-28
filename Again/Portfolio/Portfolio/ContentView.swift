@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  UltimatePortfolio
+//  Portfolio
 //
-//  Created by Seymen Nadir Elmas on 26.09.2024.
+//  Created by Seymen Nadir Elmas on 28.09.2024.
 //
 
 import SwiftUI
@@ -12,9 +12,9 @@ struct ContentView: View {
     
     var body: some View {
         Text("Content")
+        
     }
 }
-
 
 #Preview {
     ContentView()

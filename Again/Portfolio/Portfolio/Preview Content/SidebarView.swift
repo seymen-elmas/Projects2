@@ -1,13 +1,12 @@
 //
-//  SideBarView.swift
-//  UltimatePortfolio
+//  SidebarView.swift
+//  Portfolio
 //
-//  Created by Seymen Nadir Elmas on 26.09.2024.
+//  Created by Seymen Nadir Elmas on 28.09.2024.
 //
-
 import SwiftUI
 
-struct SideBarView: View {
+struct SidebarView: View {
     @EnvironmentObject var dataController: DataController
     let smartFilters: [Filter] = [.all, .recent]
 
@@ -48,6 +47,9 @@ struct SideBarView: View {
     }
 }
 
-#Preview {
-    SideBarView()
+struct SidebarView_Previews: PreviewProvider {
+    static var previews: some View {
+        SidebarView()
+            .environmentObject(DataController.preview)
+    }
 }
