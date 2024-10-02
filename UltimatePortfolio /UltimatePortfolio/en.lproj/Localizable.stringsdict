@@ -8,16 +8,16 @@
 		<string>%#@VARIABLE@</string>
 		<key>VARIABLE</key>
 		<dict>
-			<key>NSStringFormatSpecTypeKey</key>
-			<string>NSStringPluralRuleType</string>
-			<key>NSStringFormatValueTypeKey</key>
-			<string>lld</string>
-			<key>zero</key>
-			<string>Sorun yok</string>
-			<key>one</key>
-			<string>1 sorun</string>
-			<key>other</key>
-			<string>%lld Sorunlar</string>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>lld</string>
+            <key>zero</key>
+            <string>No issues</string>
+            <key>one</key>
+            <string>1 issue</string>
+            <key>other</key>
+            <string>%lld issues</string>
 		</dict>
 	</dict>
 </dict>
