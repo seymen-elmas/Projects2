@@ -35,8 +35,6 @@ struct UserFilterRow: View {
         }
     }
 }
-
-
 #Preview {
     UserFilterRow(filter: .all, rename: { _ in }, delete: { _ in })
 }

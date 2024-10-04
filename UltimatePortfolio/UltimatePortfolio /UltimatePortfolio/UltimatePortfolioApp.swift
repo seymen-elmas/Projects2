@@ -5,7 +5,6 @@
 //  Created by Seymen Nadir Elmas on 23.09.2024.
 //
 
-
 import SwiftUI
 
 @main
@@ -24,8 +23,8 @@ struct UltimatePortfolioApp: App {
             }
             .environment(\.managedObjectContext, dataController.container.viewContext)
             .environmentObject(dataController)
-            .onChange(of: scenePhase) {
-                if scenePhase != .active {
+            .onChange(of: scenePhase) { phase in
+                if phase != .active {
                     dataController.save()
                 }
             }

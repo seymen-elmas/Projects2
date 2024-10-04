@@ -4,8 +4,6 @@
 //
 //  Created by Seymen Nadir Elmas on 25.09.2024.
 //
-
-
 import SwiftUI
 
 struct IssueView: View {
@@ -41,7 +39,12 @@ struct IssueView: View {
                         .font(.title2)
                         .foregroundStyle(.secondary)
 
-                    TextField("Description", text: $issue.issueContent, prompt: Text("Enter the issue description here"), axis: .vertical)
+                    TextField(
+                        "Description",
+                        text: $issue.issueContent,
+                        prompt: Text("Enter the issue description here"),
+                        axis: .vertical
+                    )
                 }
             }
         }
@@ -55,7 +58,6 @@ struct IssueView: View {
         }
     }
 }
-
 struct IssueView_Previews: PreviewProvider {
     static var previews: some View {
         IssueView(issue: .example)

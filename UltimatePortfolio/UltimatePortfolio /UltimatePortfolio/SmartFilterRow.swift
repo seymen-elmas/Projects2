@@ -4,8 +4,6 @@
 //
 //  Created by Seymen Nadir Elmas on 2.10.2024.
 //
-
-
 import SwiftUI
 
 struct SmartFilterRow: View {
@@ -17,7 +15,6 @@ struct SmartFilterRow: View {
         }
     }
 }
-
 #Preview {
-    SmartFilterRow(filter:.all)
+    SmartFilterRow(filter: .all)
 }

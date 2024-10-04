@@ -33,8 +33,6 @@ struct SidebarViewToolbar: View {
         #endif
     }
 }
-
-
 #Preview {
     SidebarViewToolbar()
 }

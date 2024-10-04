@@ -62,9 +62,6 @@ struct AwardsView: View {
         dataController.hasEarned(award: award) ? "Unlocked: \(award.name)" : "Locked"
     }
 }
-
-
-
 #Preview {
     AwardsView()
 }
