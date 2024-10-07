@@ -1,7 +1,7 @@
 {
   "configurations" : [
     {
-      "id" : "9ECE12EF-3AE7-41B7-A1B7-6C559057BA65",
+      "id" : "EC563EE1-BAF8-49C4-BB54-901578F20FC7",
       "name" : "Configuration 1",
       "options" : {
 
@@ -13,10 +13,18 @@
   },
   "testTargets" : [
     {
+      "enabled" : false,
       "target" : {
         "containerPath" : "container:UltimatePortfolio.xcodeproj",
         "identifier" : "2BBE28552CB3997400988690",
         "name" : "UltimatePortfolioTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:UltimatePortfolio.xcodeproj",
+        "identifier" : "2B41545F2CB3FD0A00897456",
+        "name" : "UltimatePortfolioUITests"
       }
     }
   ],

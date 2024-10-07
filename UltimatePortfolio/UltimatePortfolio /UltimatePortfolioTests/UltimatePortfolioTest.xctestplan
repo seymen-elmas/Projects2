@@ -1,0 +1,32 @@
+{
+  "configurations" : [
+    {
+      "id" : "9ECE12EF-3AE7-41B7-A1B7-6C559057BA65",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:UltimatePortfolio.xcodeproj",
+        "identifier" : "2BBE28552CB3997400988690",
+        "name" : "UltimatePortfolioTests"
+      }
+    },
+    {
+      "enabled" : false,
+      "target" : {
+        "containerPath" : "container:UltimatePortfolio.xcodeproj",
+        "identifier" : "2B41545F2CB3FD0A00897456",
+        "name" : "UltimatePortfolioUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

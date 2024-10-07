@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentViewToolbar: View {
     @EnvironmentObject var dataController: DataController
+
     var body: some View {
         Menu {
             Button(dataController.filterEnabled ? "Turn Filter Off" : "Turn Filter On") {
@@ -51,7 +52,7 @@ struct ContentViewToolbar: View {
         }
 
         Button(action: dataController.newIssue) {
-            Label("New issue", systemImage: "square.and.pencil")
+            Label("New Issue", systemImage: "square.and.pencil")
         }
     }
 }
