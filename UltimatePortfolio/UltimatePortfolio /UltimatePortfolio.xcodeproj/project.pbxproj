@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
-		2BBE27862CB14D5300988690 /* PBXContainerItemProxy */ = {
+		2BBE285A2CB3997400988690 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2B2676182CA15EAD00B955E2 /* Project object */;
 			proxyType = 1;
@@ -19,40 +19,29 @@
 /* Begin PBXFileReference section */
 		2B2676202CA15EAD00B955E2 /* UltimatePortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimatePortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BAB70882CA68943004645FB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
-		2BBE27822CB14D5300988690 /* UltimatePortfolioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltimatePortfolioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BBE28562CB3997400988690 /* UltimatePortfolioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltimatePortfolioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		2B26767E2CA17F9000B955E2 /* Exceptions for "UltimatePortfolio" folder in "UltimatePortfolio" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Configurations/Info.plist,
+				Configuration/Info.plist,
 			);
 			target = 2B26761F2CA15EAD00B955E2 /* UltimatePortfolio */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		2BBE279B2CB15CEB00988690 /* Exceptions for "UltimatePortfolio" folder in "Copy Bundle Resources" phase from "UltimatePortfolio" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			buildPhase = 2B26761E2CA15EAD00B955E2 /* Resources */;
-			membershipExceptions = (
-				Configurations/UltimatePortfolio.entitlements,
-			);
-		};
-/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2B2676222CA15EAD00B955E2 /* UltimatePortfolio */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				2B26767E2CA17F9000B955E2 /* Exceptions for "UltimatePortfolio" folder in "UltimatePortfolio" target */,
-				2BBE279B2CB15CEB00988690 /* Exceptions for "UltimatePortfolio" folder in "Copy Bundle Resources" phase from "UltimatePortfolio" target */,
 			);
 			path = UltimatePortfolio;
 			sourceTree = "<group>";
 		};
-		2BBE27832CB14D5300988690 /* UltimatePortfolioTests */ = {
+		2BBE28572CB3997400988690 /* UltimatePortfolioTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = UltimatePortfolioTests;
 			sourceTree = "<group>";
@@ -67,7 +56,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2BBE277F2CB14D5300988690 /* Frameworks */ = {
+		2BBE28532CB3997400988690 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,7 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				2B2676222CA15EAD00B955E2 /* UltimatePortfolio */,
-				2BBE27832CB14D5300988690 /* UltimatePortfolioTests */,
+				2BBE28572CB3997400988690 /* UltimatePortfolioTests */,
 				2BAB70872CA68943004645FB /* Frameworks */,
 				2B2676212CA15EAD00B955E2 /* Products */,
 			);
@@ -91,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				2B2676202CA15EAD00B955E2 /* UltimatePortfolio.app */,
-				2BBE27822CB14D5300988690 /* UltimatePortfolioTests.xctest */,
+				2BBE28562CB3997400988690 /* UltimatePortfolioTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,27 +119,27 @@
 			productReference = 2B2676202CA15EAD00B955E2 /* UltimatePortfolio.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2BBE27812CB14D5300988690 /* UltimatePortfolioTests */ = {
+		2BBE28552CB3997400988690 /* UltimatePortfolioTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BBE278A2CB14D5300988690 /* Build configuration list for PBXNativeTarget "UltimatePortfolioTests" */;
+			buildConfigurationList = 2BBE285C2CB3997400988690 /* Build configuration list for PBXNativeTarget "UltimatePortfolioTests" */;
 			buildPhases = (
-				2BBE277E2CB14D5300988690 /* Sources */,
-				2BBE277F2CB14D5300988690 /* Frameworks */,
-				2BBE27802CB14D5300988690 /* Resources */,
+				2BBE28522CB3997400988690 /* Sources */,
+				2BBE28532CB3997400988690 /* Frameworks */,
+				2BBE28542CB3997400988690 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2BBE27872CB14D5300988690 /* PBXTargetDependency */,
+				2BBE285B2CB3997400988690 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				2BBE27832CB14D5300988690 /* UltimatePortfolioTests */,
+				2BBE28572CB3997400988690 /* UltimatePortfolioTests */,
 			);
 			name = UltimatePortfolioTests;
 			packageProductDependencies = (
 			);
 			productName = UltimatePortfolioTests;
-			productReference = 2BBE27822CB14D5300988690 /* UltimatePortfolioTests.xctest */;
+			productReference = 2BBE28562CB3997400988690 /* UltimatePortfolioTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -166,7 +155,7 @@
 					2B26761F2CA15EAD00B955E2 = {
 						CreatedOnToolsVersion = 16.0;
 					};
-					2BBE27812CB14D5300988690 = {
+					2BBE28552CB3997400988690 = {
 						CreatedOnToolsVersion = 16.0;
 						TestTargetID = 2B26761F2CA15EAD00B955E2;
 					};
@@ -188,7 +177,7 @@
 			projectRoot = "";
 			targets = (
 				2B26761F2CA15EAD00B955E2 /* UltimatePortfolio */,
-				2BBE27812CB14D5300988690 /* UltimatePortfolioTests */,
+				2BBE28552CB3997400988690 /* UltimatePortfolioTests */,
 			);
 		};
 /* End PBXProject section */
@@ -201,7 +190,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2BBE27802CB14D5300988690 /* Resources */ = {
+		2BBE28542CB3997400988690 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -240,7 +229,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2BBE277E2CB14D5300988690 /* Sources */ = {
+		2BBE28522CB3997400988690 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -250,10 +239,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2BBE27872CB14D5300988690 /* PBXTargetDependency */ = {
+		2BBE285B2CB3997400988690 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2B26761F2CA15EAD00B955E2 /* UltimatePortfolio */;
-			targetProxy = 2BBE27862CB14D5300988690 /* PBXContainerItemProxy */;
+			targetProxy = 2BBE285A2CB3997400988690 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -397,7 +386,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
 				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/Configuration/UltimatePortfolio.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPYING_PRESERVES_HFS_DATA = NO;
@@ -426,6 +415,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.seymenelmas.UltimatePortfolio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -442,7 +432,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
 				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/Configuration/UltimatePortfolio.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPYING_PRESERVES_HFS_DATA = NO;
@@ -471,6 +461,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.seymenelmas.UltimatePortfolio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -480,11 +471,10 @@
 			};
 			name = Release;
 		};
-		2BBE27882CB14D5300988690 /* Debug */ = {
+		2BBE285D2CB3997400988690 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -503,11 +493,10 @@
 			};
 			name = Debug;
 		};
-		2BBE27892CB14D5300988690 /* Release */ = {
+		2BBE285E2CB3997400988690 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -548,11 +537,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BBE278A2CB14D5300988690 /* Build configuration list for PBXNativeTarget "UltimatePortfolioTests" */ = {
+		2BBE285C2CB3997400988690 /* Build configuration list for PBXNativeTarget "UltimatePortfolioTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2BBE27882CB14D5300988690 /* Debug */,
-				2BBE27892CB14D5300988690 /* Release */,
+				2BBE285D2CB3997400988690 /* Debug */,
+				2BBE285E2CB3997400988690 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

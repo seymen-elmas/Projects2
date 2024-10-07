@@ -30,7 +30,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:UltimatePortfolioTests/UltimatePortfolio.xctestplan"
+            reference = "container:UltimatePortfolioTests/TestPlan.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
@@ -40,7 +40,7 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2BBE27812CB14D5300988690"
+               BlueprintIdentifier = "2BBE28552CB3997400988690"
                BuildableName = "UltimatePortfolioTests.xctest"
                BlueprintName = "UltimatePortfolioTests"
                ReferencedContainer = "container:UltimatePortfolio.xcodeproj">
