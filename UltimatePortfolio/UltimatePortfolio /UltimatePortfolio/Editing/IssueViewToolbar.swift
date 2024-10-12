@@ -88,7 +88,10 @@ struct IssueViewToolbar: View {
         }
     }
 }
-#Preview {
-    IssueViewToolbar(issue: Issue.example)
-        .environmentObject(DataController(inMemory: true))
+
+struct IssueViewToolbar_Previews: PreviewProvider {
+    static var previews: some View {
+        IssueViewToolbar(issue: Issue.example)
+            .environmentObject(DataController(inMemory: true))
+    }
 }
