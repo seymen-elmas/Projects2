@@ -115,7 +115,7 @@ final class ExtensionTests: BaseTestCase {
 
         let tag2 = Tag(context: managedObjectContext)
         tag2.name = "B Tag"
-        tag2.id = UUID(uuidString: "DEA16EED-7950-4505-9018-87020C8CF7BE")
+        tag2.id = UUID(uuidString: "FFFFFFFF-FFFF-4526-B53A-55F1B0B895A1")
 
         let tag3 = Tag(context: managedObjectContext)
         tag3.name = "A Tag"
