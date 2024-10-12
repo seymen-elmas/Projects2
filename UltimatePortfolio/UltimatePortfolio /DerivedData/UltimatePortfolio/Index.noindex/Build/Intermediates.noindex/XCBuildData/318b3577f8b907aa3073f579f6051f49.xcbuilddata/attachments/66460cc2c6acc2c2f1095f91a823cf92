@@ -1,0 +1,30 @@
+{
+  "" : {
+    "dependencies" : "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /DerivedData/UltimatePortfolio/Index.noindex/Build/Intermediates.noindex/UltimatePortfolio.build/Debug-iphonesimulator/UltimatePortfolioTests.build/Objects-normal/arm64/UltimatePortfolioTests-master.d",
+    "diagnostics" : "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /DerivedData/UltimatePortfolio/Index.noindex/Build/Intermediates.noindex/UltimatePortfolio.build/Debug-iphonesimulator/UltimatePortfolioTests.build/Objects-normal/arm64/UltimatePortfolioTests-master.dia",
+    "emit-module-dependencies" : "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /DerivedData/UltimatePortfolio/Index.noindex/Build/Intermediates.noindex/UltimatePortfolio.build/Debug-iphonesimulator/UltimatePortfolioTests.build/Objects-normal/arm64/UltimatePortfolioTests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /DerivedData/UltimatePortfolio/Index.noindex/Build/Intermediates.noindex/UltimatePortfolio.build/Debug-iphonesimulator/UltimatePortfolioTests.build/Objects-normal/arm64/UltimatePortfolioTests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /DerivedData/UltimatePortfolio/Index.noindex/Build/Intermediates.noindex/UltimatePortfolio.build/Debug-iphonesimulator/UltimatePortfolioTests.build/Objects-normal/arm64/UltimatePortfolioTests-master.swiftdeps"
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolioTests/AssetTests.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolioTests/AwardsTest.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolioTests/DevelopmentTests.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolioTests/ExtensionTests.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolioTests/PerformanceTests.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolioTests/TagTests.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolioTests/UltimatePortfolioTests.swift" : {
+
+  }
+}

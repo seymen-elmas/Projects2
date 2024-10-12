@@ -1,0 +1,96 @@
+{
+  "" : {
+    "dependencies" : "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /DerivedData/UltimatePortfolio/Index.noindex/Build/Intermediates.noindex/UltimatePortfolio.build/Debug-iphoneos/UltimatePortfolio.build/Objects-normal/arm64/UltimatePortfolio-master.d",
+    "diagnostics" : "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /DerivedData/UltimatePortfolio/Index.noindex/Build/Intermediates.noindex/UltimatePortfolio.build/Debug-iphoneos/UltimatePortfolio.build/Objects-normal/arm64/UltimatePortfolio-master.dia",
+    "emit-module-dependencies" : "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /DerivedData/UltimatePortfolio/Index.noindex/Build/Intermediates.noindex/UltimatePortfolio.build/Debug-iphoneos/UltimatePortfolio.build/Objects-normal/arm64/UltimatePortfolio-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /DerivedData/UltimatePortfolio/Index.noindex/Build/Intermediates.noindex/UltimatePortfolio.build/Debug-iphoneos/UltimatePortfolio.build/Objects-normal/arm64/UltimatePortfolio-master-emit-module.dia",
+    "swift-dependencies" : "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /DerivedData/UltimatePortfolio/Index.noindex/Build/Intermediates.noindex/UltimatePortfolio.build/Debug-iphoneos/UltimatePortfolio.build/Objects-normal/arm64/UltimatePortfolio-master.swiftdeps"
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /DerivedData/UltimatePortfolio/Index.noindex/Build/Intermediates.noindex/UltimatePortfolio.build/Debug-iphoneos/UltimatePortfolio.build/DerivedSources/CoreDataGenerated/Main/Issue+CoreDataClass.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /DerivedData/UltimatePortfolio/Index.noindex/Build/Intermediates.noindex/UltimatePortfolio.build/Debug-iphoneos/UltimatePortfolio.build/DerivedSources/CoreDataGenerated/Main/Issue+CoreDataProperties.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /DerivedData/UltimatePortfolio/Index.noindex/Build/Intermediates.noindex/UltimatePortfolio.build/Debug-iphoneos/UltimatePortfolio.build/DerivedSources/CoreDataGenerated/Main/Main+CoreDataModel.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /DerivedData/UltimatePortfolio/Index.noindex/Build/Intermediates.noindex/UltimatePortfolio.build/Debug-iphoneos/UltimatePortfolio.build/DerivedSources/CoreDataGenerated/Main/Tag+CoreDataClass.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /DerivedData/UltimatePortfolio/Index.noindex/Build/Intermediates.noindex/UltimatePortfolio.build/Debug-iphoneos/UltimatePortfolio.build/DerivedSources/CoreDataGenerated/Main/Tag+CoreDataProperties.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /DerivedData/UltimatePortfolio/Index.noindex/Build/Intermediates.noindex/UltimatePortfolio.build/Debug-iphoneos/UltimatePortfolio.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Awrads/Award.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Awrads/AwardsView.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/DataController.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Editing/DetailView.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Editing/IssueView.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Editing/IssueViewToolbar.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Editing/NoIssueView.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Editing/TagsMenuView.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Extensions/Bundle-Decodable.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Extensions/Issue-CoreDataHelpers.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Extensions/Tag-CoreDataHelpers.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Filters/Filter.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Filters/SidebarView.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Filters/SidebarViewModel.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Filters/SidebarViewToolbar.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Filters/SmartFilterRow.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Filters/UserFilterRow.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Issues/ContentView.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Issues/ContentViewModel.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Issues/ContentViewToolbar.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Issues/IssueRow.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Issues/IssueRowView.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/UltimatePortfolioApp.swift" : {
+
+  }
+}

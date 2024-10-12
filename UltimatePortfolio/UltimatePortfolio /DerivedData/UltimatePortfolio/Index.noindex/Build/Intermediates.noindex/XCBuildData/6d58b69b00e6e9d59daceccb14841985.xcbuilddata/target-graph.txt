@@ -1,0 +1,19 @@
+Target dependency graph (12 targets)
+Target 'UltimatePortfolioTests' in project 'UltimatePortfolio'
+➜ Explicit dependency on target 'UltimatePortfolio' in project 'UltimatePortfolio'
+Target 'UltimatePortfolioTests' in project 'UltimatePortfolio'
+➜ Explicit dependency on target 'UltimatePortfolio' in project 'UltimatePortfolio'
+Target 'UltimatePortfolioTests' in project 'UltimatePortfolio'
+➜ Explicit dependency on target 'UltimatePortfolio' in project 'UltimatePortfolio'
+Target 'UltimatePortfolioUITests' in project 'UltimatePortfolio'
+➜ Explicit dependency on target 'UltimatePortfolio' in project 'UltimatePortfolio'
+Target 'UltimatePortfolioUITests' in project 'UltimatePortfolio'
+➜ Explicit dependency on target 'UltimatePortfolio' in project 'UltimatePortfolio'
+Target 'UltimatePortfolioUITests' in project 'UltimatePortfolio'
+➜ Explicit dependency on target 'UltimatePortfolio' in project 'UltimatePortfolio'
+Target 'UltimatePortfolio' in project 'UltimatePortfolio' (no dependencies)
+Target 'UltimatePortfolio' in project 'UltimatePortfolio' (no dependencies)
+Target 'UltimatePortfolio' in project 'UltimatePortfolio' (no dependencies)
+Target 'UltimatePortfolio' in project 'UltimatePortfolio' (no dependencies)
+Target 'UltimatePortfolio' in project 'UltimatePortfolio' (no dependencies)
+Target 'UltimatePortfolio' in project 'UltimatePortfolio' (no dependencies)

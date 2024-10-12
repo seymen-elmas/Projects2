@@ -1,0 +1,15 @@
+{
+  "" : {
+    "dependencies" : "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /DerivedData/UltimatePortfolio/Index.noindex/Build/Intermediates.noindex/UltimatePortfolio.build/Debug-maccatalyst/UltimatePortfolioUITests.build/Objects-normal/arm64/UltimatePortfolioUITests-master.d",
+    "diagnostics" : "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /DerivedData/UltimatePortfolio/Index.noindex/Build/Intermediates.noindex/UltimatePortfolio.build/Debug-maccatalyst/UltimatePortfolioUITests.build/Objects-normal/arm64/UltimatePortfolioUITests-master.dia",
+    "emit-module-dependencies" : "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /DerivedData/UltimatePortfolio/Index.noindex/Build/Intermediates.noindex/UltimatePortfolio.build/Debug-maccatalyst/UltimatePortfolioUITests.build/Objects-normal/arm64/UltimatePortfolioUITests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /DerivedData/UltimatePortfolio/Index.noindex/Build/Intermediates.noindex/UltimatePortfolio.build/Debug-maccatalyst/UltimatePortfolioUITests.build/Objects-normal/arm64/UltimatePortfolioUITests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /DerivedData/UltimatePortfolio/Index.noindex/Build/Intermediates.noindex/UltimatePortfolio.build/Debug-maccatalyst/UltimatePortfolioUITests.build/Objects-normal/arm64/UltimatePortfolioUITests-master.swiftdeps"
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolioUITests/UltimatePortfolioUITests.swift" : {
+
+  },
+  "/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolioUITests/UltimatePortfolioUITestsLaunchTests.swift" : {
+
+  }
+}

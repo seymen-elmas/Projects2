@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>colors</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameDarkBlue</string>
+			<key>relativePath</key>
+			<string>./Dark Blue.colorset</string>
+			<key>swiftSymbol</key>
+			<string>darkBlue</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameDarkGray</string>
+			<key>relativePath</key>
+			<string>./Dark Gray.colorset</string>
+			<key>swiftSymbol</key>
+			<string>darkGray</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameGold</string>
+			<key>relativePath</key>
+			<string>./Gold.colorset</string>
+			<key>swiftSymbol</key>
+			<string>gold</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameGray</string>
+			<key>relativePath</key>
+			<string>./Gray.colorset</string>
+			<key>swiftSymbol</key>
+			<string>gray</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameGreen</string>
+			<key>relativePath</key>
+			<string>./Green.colorset</string>
+			<key>swiftSymbol</key>
+			<string>green</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameLightBlue</string>
+			<key>relativePath</key>
+			<string>./Light Blue.colorset</string>
+			<key>swiftSymbol</key>
+			<string>lightBlue</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameMidnight</string>
+			<key>relativePath</key>
+			<string>./Midnight.colorset</string>
+			<key>swiftSymbol</key>
+			<string>midnight</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameOrange</string>
+			<key>relativePath</key>
+			<string>./Orange.colorset</string>
+			<key>swiftSymbol</key>
+			<string>orange</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNamePink</string>
+			<key>relativePath</key>
+			<string>./Pink.colorset</string>
+			<key>swiftSymbol</key>
+			<string>pink</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNamePurple</string>
+			<key>relativePath</key>
+			<string>./Purple.colorset</string>
+			<key>swiftSymbol</key>
+			<string>purple</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameRed</string>
+			<key>relativePath</key>
+			<string>./Red.colorset</string>
+			<key>swiftSymbol</key>
+			<string>red</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/seynadel/Desktop/Projeler/UltimatePortfolio/UltimatePortfolio /UltimatePortfolio/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameTeal</string>
+			<key>relativePath</key>
+			<string>./Teal.colorset</string>
+			<key>swiftSymbol</key>
+			<string>teal</string>
+		</dict>
+	</array>
+	<key>images</key>
+	<array/>
+	<key>symbols</key>
+	<array/>
+</dict>
+</plist>
