@@ -1,6 +1,0 @@
-Target dependency graph (3 targets)
-Target 'UltimatePortfolioUITests' in project 'UltimatePortfolio'
-➜ Explicit dependency on target 'UltimatePortfolio' in project 'UltimatePortfolio'
-Target 'UltimatePortfolioTests' in project 'UltimatePortfolio'
-➜ Explicit dependency on target 'UltimatePortfolio' in project 'UltimatePortfolio'
-Target 'UltimatePortfolio' in project 'UltimatePortfolio' (no dependencies)
