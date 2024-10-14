@@ -56,7 +56,7 @@ class DataController: ObservableObject {
                 issue.title = "Issue \(i)-\(j)"
                 issue.content = "Description goes here"
                 issue.creationDate = .now
-                issue.modificationDate = .now  // İlk oluşturulurken modificationDate atanıyor
+                issue.modificationDate = .now
                 issue.completed = Bool.random()
                 issue.priority = Int16.random(in: 0...2)
                 tag.addToIssues(issue)

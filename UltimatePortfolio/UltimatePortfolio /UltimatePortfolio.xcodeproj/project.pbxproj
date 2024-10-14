@@ -76,11 +76,11 @@
 		2B2676172CA15EAD00B955E2 = {
 			isa = PBXGroup;
 			children = (
+				2BAB70872CA68943004645FB /* Frameworks */,
+				2B2676212CA15EAD00B955E2 /* Products */,
 				2B2676222CA15EAD00B955E2 /* UltimatePortfolio */,
 				2BBE28572CB3997400988690 /* UltimatePortfolioTests */,
 				2B4154612CB3FD0A00897456 /* UltimatePortfolioUITests */,
-				2BAB70872CA68943004645FB /* Frameworks */,
-				2B2676212CA15EAD00B955E2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
