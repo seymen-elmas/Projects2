@@ -31,36 +31,7 @@ struct IssueView: View {
                     Text("High").tag(Int16(2))
                 }
 
-                Menu {
-                    // show selected tags first
-                    ForEach(issue.issueTags) { tag in
-                        Button {
-                            issue.removeFromTags(tag)
-                        } label: {
-                            Label(tag.tagName, systemImage: "checkmark")
-                        }
-                    }
-
-                    // now show unselected tags
-                    let otherTags = dataController.missingTags(from: issue)
-
-                    if otherTags.isEmpty == false {
-                        Divider()
-
-                        Section("Add Tags") {
-                            ForEach(otherTags) { tag in
-                                Button(tag.tagName) {
-                                    issue.addToTags(tag)
-                                }
-                            }
-                        }
-                    }
-                } label: {
-                    Text(issue.issueTagsList)
-                        .multilineTextAlignment(.leading)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .animation(nil, value: issue.issueTagsList)
-                }
+                TagsMenuView(issue: issue)
             }
 
             Section {
@@ -69,11 +40,23 @@ struct IssueView: View {
                         .font(.title2)
                         .foregroundStyle(.secondary)
 
-                    TextField("Description", text: $issue.issueContent, prompt: Text("Enter the issue description here"), axis: .vertical)
+                    TextField(
+                        "Description",
+                        text: $issue.issueContent,
+                        prompt: Text("Enter the issue description here"),
+                        axis: .vertical
+                    )
                 }
             }
         }
         .disabled(issue.isDeleted)
+        .onReceive(issue.objectWillChange) { _ in
+            dataController.queueSave()
+        }
+        .onSubmit(dataController.save)
+        .toolbar {
+            IssueViewToolbar(issue: issue)
+        }
     }
 }
 
