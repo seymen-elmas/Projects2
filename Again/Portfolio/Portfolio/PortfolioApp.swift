@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct UltimatePortfolioApp: App {
+struct PortfolioApp: App {
     @StateObject var dataController = DataController()
     @Environment(\.scenePhase) var scenePhase
 
