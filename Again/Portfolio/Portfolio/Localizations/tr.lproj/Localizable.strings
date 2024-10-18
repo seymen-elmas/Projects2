@@ -1,0 +1,97 @@
+/* 
+  Localizable.strings
+  UltimatePortfolio
+
+  Created by Seymen Nadir Elmas on 30.09.2024.
+  
+*/
+/* GENERAL STRINGS */
+"OK" = "Tamam";
+"Cancel" = "İptal";
+"Delete" = "Sil";
+"Rename" = "Yeniden Adlandır";
+"Actions" = "Eylemler";
+
+
+
+/* SIDEBARVIEW */
+"Filters" = "Filtreler";
+"Smart Filters" = "Akıllı Filtre";
+"All Issues" = "Bütün Sorunlar";
+"Recent Issues" = "Geçmiş Sorunlar";
+"Tags" = "Etiket";
+"Add tag" = "Etkiet Ekle";
+"Show awards" = "Başarıları göster";
+
+"Rename tag" = "Etiketi Yeniden Adlandır";
+"New name" = "Yeni isim";
+
+
+
+/* CONTENTVIEW */
+"Issues" = "Sorunlar";
+
+/* A button that shows a menu with the following options */
+"Filter" = "Filtre";
+"Turn Filter On" = "Filtre Açık"; /* Enables filtering */
+"Turn Filter Off" = "Filtre Kapalı"; /* Disables filtering */
+"Sort By" = "Sırala"; /* Adjust the order issues are shown */
+"Date Created" = "Oluşturulma tarihi"; /* Sort issues by the date they were created */
+"Date Modified" = "Değiştirilme tarihi"; /* Sort issues by the date they were last changed */
+"Newest to Oldest" = "Yeniden Eskiye"; /* Place newer issues before older issues */
+"Oldest to Newest" = "Eskiden Yeniye"; /* Place older issues before newer issues */
+
+"All" = "Tümü";
+"Open" = "Açık";
+"Closed" = "Kapalı";
+
+"Low" = "Düşük";
+"Medium" = "Orta";
+"High" = "Yüksek";
+
+/* Create a new issue */
+"New Issue" = "Yeni Sorun";
+
+/* A text placeholder, to help users search */
+"Filter issues, or type # to add tags" = "Sorunları filtreleyin veya etiket eklemek için # yazın";
+
+/* Shown as a status for closed issues */
+"CLOSED" = "Kapalı";
+
+
+
+/* DETAILSVIEW */
+"Details" = "Detaylar";
+
+/* NOISSUEVIEW */
+"No Issue Selected" = "Hiç Sorun Seçilmedi";
+
+/* ISSUEVIEW */
+"Copy Issue Title" = "Sorun başlığını kopyala";
+"Close Issue" = "Sorunu Kapat";
+"Re-open Issue" = "Sorunu Tekrar Aç";
+
+/* Fields that let the users enter details about a specific issue */
+"Enter the issue title here" = "Sorun başlığını buraya girin";
+"**Modified:** %@" = "**Değiştirildi:** %@";
+"**Status:** %@" = "**Durum:** %@";
+"Priority" = "Öncelik";
+"Add Tags" = "Etiket Ekle";
+"Basic Information" = "Temel Bilgi";
+"Enter the issue description here" = "Sorun açıklamasını buraya girin";
+
+
+
+/* AWARDS VIEW */
+"Awards" = "Ödüller";
+
+
+
+/* DATA */
+"New tag" = "Yeni Etiket";
+"New issue" = "Yeni Sorun";
+
+
+
+/* DEBUG ONLY */
+"ADD SAMPLES" = "Örnek Ekle";

@@ -41,7 +41,6 @@ struct IssueViewToolbar: View {
     }
 }
 
-
 #Preview {
     IssueViewToolbar(issue: Issue.example)
         .environmentObject(DataController(inMemory: true))

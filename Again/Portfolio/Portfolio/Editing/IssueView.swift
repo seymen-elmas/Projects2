@@ -61,5 +61,5 @@ struct IssueView: View {
 }
 
 #Preview {
-    IssueView(issue : .example)
+    IssueView(issue: .example)
 }

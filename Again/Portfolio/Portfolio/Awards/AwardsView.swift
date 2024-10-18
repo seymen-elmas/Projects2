@@ -63,7 +63,6 @@ struct AwardsView: View {
     }
 }
 
-
 #Preview {
     AwardsView()
 }

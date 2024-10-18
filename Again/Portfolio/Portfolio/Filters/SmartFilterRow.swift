@@ -17,7 +17,6 @@ struct SmartFilterRow: View {
     }
 }
 
-
 #Preview {
     SmartFilterRow(filter: .all)
 }

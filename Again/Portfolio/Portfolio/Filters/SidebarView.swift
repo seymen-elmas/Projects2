@@ -73,5 +73,3 @@ struct SidebarView: View {
     SidebarView()
         .environmentObject(DataController.preview)
 }
-
-
