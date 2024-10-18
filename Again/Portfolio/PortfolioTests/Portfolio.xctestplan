@@ -17,6 +17,14 @@
   },
   "testTargets" : [
     {
+      "enabled" : false,
+      "target" : {
+        "containerPath" : "container:Portfolio.xcodeproj",
+        "identifier" : "2B6035842CC2F3AB005BA96D",
+        "name" : "PortfolioUITests"
+      }
+    },
+    {
       "parallelizable" : true,
       "target" : {
         "containerPath" : "container:Portfolio.xcodeproj",

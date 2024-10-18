@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "1600"
-   version = "1.7">
+   version = "2.1">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES"
@@ -21,6 +21,54 @@
                ReferencedContainer = "container:Portfolio.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <TestPlanReference
+               reference = "container:Portfolio.xctestplan">
+            </TestPlanReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <TestPlanReference
+               reference = "container:PortfolioUITests/PortfolioUI.xctestplan">
+            </TestPlanReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2B6034902CC27BD6005BA96D"
+               BuildableName = "PortfolioTests.xctest"
+               BlueprintName = "PortfolioTests"
+               ReferencedContainer = "container:Portfolio.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2B6035842CC2F3AB005BA96D"
+               BuildableName = "PortfolioUITests.xctest"
+               BlueprintName = "PortfolioUITests"
+               ReferencedContainer = "container:Portfolio.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -33,6 +81,9 @@
             reference = "container:Portfolio.xctestplan"
             default = "YES">
          </TestPlanReference>
+         <TestPlanReference
+            reference = "container:PortfolioUITests/PortfolioUI.xctestplan">
+         </TestPlanReference>
       </TestPlans>
       <Testables>
          <TestableReference
@@ -43,6 +94,17 @@
                BlueprintIdentifier = "2B6034902CC27BD6005BA96D"
                BuildableName = "PortfolioTests.xctest"
                BlueprintName = "PortfolioTests"
+               ReferencedContainer = "container:Portfolio.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2B6035842CC2F3AB005BA96D"
+               BuildableName = "PortfolioUITests.xctest"
+               BlueprintName = "PortfolioUITests"
                ReferencedContainer = "container:Portfolio.xcodeproj">
             </BuildableReference>
          </TestableReference>
