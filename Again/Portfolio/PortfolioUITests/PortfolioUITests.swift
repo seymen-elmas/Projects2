@@ -19,7 +19,7 @@ extension XCUIElement {
     }
 }
 
-final class UltimatePortfolioUITests: XCTestCase {
+final class PortfolioUITests: XCTestCase {
     var app: XCUIApplication!
 
     override func setUpWithError() throws {
