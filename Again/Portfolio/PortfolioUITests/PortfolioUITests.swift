@@ -86,11 +86,15 @@ final class UltimatePortfolioUITests: XCTestCase {
     func testAllAwardsShowLockedAlert() {
         app.buttons["Filters"].tap()
         app.buttons["Show awards"].tap()
+
         for award in app.scrollViews.buttons.allElementsBoundByIndex {
+            if app.windows.element.frame.contains(award.frame) == false {
+                app.swipeUp()
+            }
+
             award.tap()
-            XCTAssertTrue(app.alerts["Locked"].exists, "There should be a Locked alert showing for awards.")
+            XCTAssertTrue(app.alerts["Locked"].exists, "There should be a Locked alert showing this award.")
             app.buttons["OK"].tap()
         }
     }
 }
-
