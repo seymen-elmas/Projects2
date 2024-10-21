@@ -41,17 +41,7 @@ class ToothViewModel: ObservableObject {
         topRightArea.isBrushed = true
     }
 
-    func brushBottomLeftArea() {
-        topLeftArea.isBrushed = false
-        topRightArea.isBrushed = false
-       
-    }
 
-    func brushBottomRightArea() {
-        topLeftArea.isBrushed = false
-        topRightArea.isBrushed = false
-       
-    }
 
     func startAutomaticBrushing() {
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in

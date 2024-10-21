@@ -28,6 +28,16 @@ struct ContentView: View {
                 
                 
             }
+            ToothBrushView()
+                .rotationEffect(.degrees(90))
+                
+            ToothBrushView2()
+                .rotationEffect(.degrees(-90))
+            ToothBrushView()
+                .rotationEffect(.degrees(-90))
+                
+            ToothBrushView2()
+                .rotationEffect(.degrees(90))
             
            
     
