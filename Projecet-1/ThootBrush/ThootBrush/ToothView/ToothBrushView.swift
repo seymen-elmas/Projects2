@@ -13,12 +13,7 @@ struct ToothBrushView: View {
         
         var body: some View {
             ZStack {
-                // Diş Etleri ve Dişler
-                Path { path in
-                    path.move(to: CGPoint(x: 50, y: 150))
-                    path.addCurve(to: CGPoint(x: 250, y: 150), control1: CGPoint(x: 100, y: 100), control2: CGPoint(x: 200, y: 100)) // Diş eğrisi
-                }
-                .stroke(Color.gray, lineWidth: 3)
+                
                 
                 // Fırça şekli
                 BrushShape()

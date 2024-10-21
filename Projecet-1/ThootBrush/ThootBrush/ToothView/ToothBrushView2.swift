@@ -14,18 +14,12 @@ struct ToothBrushView2: View {
      
      var body: some View {
          ZStack {
-             // Dişler (Temsili)
-             Path { path in
-                 path.move(to: CGPoint(x: 50, y: 150))
-                 path.addLine(to: CGPoint(x: 250, y: 150)) // Dişlerin düz çizgisi
-             }
-             .stroke(Color.gray, lineWidth: 3)
              
              // Fırça şekli
              BrushShape()
                  .offset(x: brushPosition ? 100 : -100) // Fırçanın ileri geri hareketi
                  .animation(
-                    Animation.easeInOut(duration: 1.8).repeatForever(autoreverses: true)
+                    Animation.easeInOut(duration: 1.75).repeatForever(autoreverses: true)
                  )
                  .onAppear {
                      brushPosition.toggle() // Hareketin başlaması
