@@ -30,7 +30,7 @@ struct BrushingToothView: View {
 
            
 
-            Image(systemName: "paintbrush")
+            Image(systemName: "")
                 .resizable()
                 .frame(width: 50, height: 50)
                 .offset(viewModel.brushPosition)

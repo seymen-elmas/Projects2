@@ -29,15 +29,14 @@ struct ContentView: View {
                 
             }
             ToothBrushView()
-                .rotationEffect(.degrees(90))
+                .rotationEffect(.degrees(180))
                 
-            ToothBrushView2()
-                .rotationEffect(.degrees(-90))
+           
             ToothBrushView()
-                .rotationEffect(.degrees(-90))
+                .rotationEffect(.degrees(0))
                 
             ToothBrushView2()
-                .rotationEffect(.degrees(90))
+                .rotationEffect(.degrees(180))
             
            
     
