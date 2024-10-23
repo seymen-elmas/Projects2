@@ -18,13 +18,14 @@ struct ContentView: View {
                 .clipShape(.buttonBorder)
                 .foregroundStyle(.white)
                 .frame(width: 400,height: 450)
-            VStack{
+                
+            VStack(){
                 BrushingToothView()
                     .rotationEffect(.degrees(180))
                     .padding(50)
                 BrushingToothView2()
-                    
                     .rotationEffect(.degrees(0))
+                    
                 
                 
             }
