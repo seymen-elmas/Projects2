@@ -38,10 +38,13 @@ struct DashboardView: View {
                         .font(.headline)
                         .frame(maxWidth: .infinity, alignment: .leading)
                     // Buraya gerçek bir grafik koyabilirsin
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.orange.opacity(0.3))
-                        .frame(height: 150)
-                        .overlay(Text("Weekly Chart"))
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(Color.orange.opacity(0.3))
+                            .frame(height: 220)
+                        ChartView()
+                    }
+                    
                 }
                 .padding()
                 .background(Color.orange.opacity(0.1))
