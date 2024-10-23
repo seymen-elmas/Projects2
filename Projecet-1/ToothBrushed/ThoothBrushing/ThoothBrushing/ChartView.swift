@@ -31,7 +31,7 @@ struct ChartView: View {
                 )
                 .foregroundStyle(.blue)
             }
-            .frame(height: 200)
+            .frame(height: 75)
             .padding()
         }
     }

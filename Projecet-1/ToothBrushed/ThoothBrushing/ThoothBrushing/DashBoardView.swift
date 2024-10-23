@@ -14,7 +14,8 @@ struct DashboardView: View {
                     Text("Brushing Time")
                         .font(.headline)
                     Spacer()
-                    Text("Daily: 2min")
+                    BrushingTimerView()
+                        .frame(height:100)
                 }
                 .padding()
                 .background(Color.blue.opacity(0.1))
@@ -41,14 +42,16 @@ struct DashboardView: View {
                     ZStack{
                         RoundedRectangle(cornerRadius: 10)
                             .fill(Color.orange.opacity(0.3))
-                            .frame(height: 220)
+                            .frame(height: 100)
                         ChartView()
                     }
                     
                 }
+                .frame(height: 100)
                 .padding()
                 .background(Color.orange.opacity(0.1))
                 .cornerRadius(10)
+                
 
                 // Rozetler ve Başarılar
                 VStack(alignment: .leading) {
@@ -56,16 +59,19 @@ struct DashboardView: View {
                         .font(.headline)
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
-                            // Basit rozet örnekleri
-                            ForEach (1..<5) { data in
+                            ForEach(1..<5) { data in
                                 VStack {
                                     Circle()
                                         .fill(Color.yellow)
                                         .frame(width: 50, height: 50)
+                                        .overlay(Text("\(data)").foregroundColor(.white))
                                     Text("Award \(data)")
                                         .font(.caption)
+                                        .foregroundColor(.secondary)
                                 }
                                 .padding()
+                                .scaleEffect(data == 1 ? 1.2 : 1.0)  // İlk ödül vurgulanmış gibi
+                                .animation(.spring(), value: data)  // Basit animasyon
                             }
                         }
                     }
@@ -73,6 +79,7 @@ struct DashboardView: View {
                 .padding()
                 .background(Color.purple.opacity(0.1))
                 .cornerRadius(10)
+
 
                 // Fırçalama Geçmişi
                 VStack(alignment: .leading) {
