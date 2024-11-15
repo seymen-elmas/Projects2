@@ -21,7 +21,7 @@ struct BrushingTimerView: View {
                 Circle()
                     .stroke(lineWidth: 20.0)
                     .opacity(0.3)
-                    .foregroundColor(.blue)
+                    .foregroundColor(Color(red: 0.065, green: 0.175, blue: 0.278))
 
                 Circle()
                     .trim(from: 0.0, to: progress)
@@ -41,6 +41,7 @@ struct BrushingTimerView: View {
                     startBrushingTimer()
                 }
             }
+            .foregroundColor(.black)
         }
         .padding()
     }

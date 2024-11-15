@@ -18,7 +18,7 @@ struct DashboardView: View {
                         .frame(height:100)
                 }
                 .padding()
-                .background(Color.blue.opacity(0.1))
+                .background(Color.cyan.opacity(0.40))
                 .cornerRadius(10)
 
                 // Hatırlatıcı
@@ -30,7 +30,7 @@ struct DashboardView: View {
                         .font(.headline)
                 }
                 .padding()
-                .background(Color.green.opacity(0.1))
+                .background(Color.pink.opacity(0.35))
                 .cornerRadius(10)
 
                 // Başarı Grafiği
@@ -38,10 +38,10 @@ struct DashboardView: View {
                     Text("Success Process")
                         .font(.headline)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                    // Buraya gerçek bir grafik koyabilirsin
+                    
                     ZStack{
                         RoundedRectangle(cornerRadius: 10)
-                            .fill(Color.orange.opacity(0.3))
+                            .fill(Color.orange.opacity(0.35))
                             .frame(height: 100)
                         ChartView()
                     }
@@ -49,7 +49,7 @@ struct DashboardView: View {
                 }
                 .frame(height: 100)
                 .padding()
-                .background(Color.orange.opacity(0.1))
+                .background(Color.yellow.opacity(0.4))
                 .cornerRadius(10)
                 
 
@@ -77,7 +77,7 @@ struct DashboardView: View {
                     }
                 }
                 .padding()
-                .background(Color.purple.opacity(0.1))
+                .background(Color.pink.opacity(0.35))
                 .cornerRadius(10)
 
 
@@ -87,17 +87,24 @@ struct DashboardView: View {
                         .font(.headline)
                     // Takvim görünümü için basit placeholder
                     RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.gray.opacity(0.3))
+                        .fill(Color.gray.opacity(0.35))
                         .frame(height: 150)
                         .overlay(Text("Calendar"))
                 }
                 .padding()
-                .background(Color.gray.opacity(0.1))
+                .background(Color.white.opacity(0.5))
                 .cornerRadius(10)
             }
             .padding()
         }
         .navigationTitle("Dashboard")
+       
+        .background(RadialGradient(stops: [
+            .init(color: Color(red: 0.1, green: 0.55, blue: 0.8), location: 0.3),
+            .init(color: Color(red: 0.60, green: 1.52, blue: 2.38), location: 1.99)
+        ], center: .top, startRadius: 00, endRadius: 700)
+            .ignoresSafeArea()
+        )
     }
 }
 
