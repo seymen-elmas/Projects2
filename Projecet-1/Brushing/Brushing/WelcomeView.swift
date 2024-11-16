@@ -8,6 +8,7 @@
 
 import SwiftUI
 import FirebaseFirestore
+import FirebaseAuth
 
 struct WelcomeView: View {
     @State private var userName: String = "User"
