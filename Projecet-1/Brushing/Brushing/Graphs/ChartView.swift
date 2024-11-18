@@ -14,17 +14,17 @@ struct BrushingChartView: View {
     var body: some View {
         VStack {
             Chart {
-                // Kullanıcı verileri
+                
                 ForEach(brushingManager.brushingData) { data in
                     LineMark(
                         x: .value("Gün", data.date, unit: .day),
                         y: .value("Süre (sn)", data.durationInSeconds)
                     )
-                    .symbol(Circle()) // Veri noktası
+                    .symbol(Circle())
                     .interpolationMethod(.linear)
                 }
                 
-                // Hedef süre çizgisi (2 dakika = 120 saniye)
+                
                 RuleMark(y: .value("Hedef Süre", 120))
                     .lineStyle(StrokeStyle(lineWidth: 2, dash: [5]))
                     .foregroundStyle(.red)
