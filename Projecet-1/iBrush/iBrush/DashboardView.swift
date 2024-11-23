@@ -5,75 +5,97 @@
 //  Created by Seymen Nadir Elmas on 23.11.2024.
 //
 
-
 import SwiftUI
 import Charts
-
 struct DashboardView: View {
     @ObservedObject var firestoreService = FirestoreService()
-
+    
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
-                // Kişisel Bilgiler
-                VStack {
-                    Text("Hoş Geldiniz!")
+                // Kullanıcı Bilgileri
+                HStack {
+                    Text("Hoşgeldin, \(firestoreService.userName)")
                         .font(.headline)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(Color.cyan.opacity(0.5))
-                            .frame(height: 100)
-                        Text("Bu alan kişisel bilgilerinizi içerir")
-                    }
+                    Spacer()
                 }
                 .padding()
-                .background(Color.indigo.opacity(0.1))
+                .background(Color.cyan.opacity(0.1))
                 .cornerRadius(10)
-
+                
+                // Fırçalama Süresi
+                HStack {
+                    Text("Bugün Fırçalama Süresi")
+                        .font(.headline)
+                    Spacer()
+                    Text("\(firestoreService.dailyBrushingTime) dk")
+                }
+                .padding()
+                .background(Color.blue.opacity(0.1))
+                .cornerRadius(10)
+                
                 // Başarı Grafiği
                 VStack {
                     Text("Başarı Grafiği")
                         .font(.headline)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    
                     Chart(firestoreService.brushingDays) { day in
                         BarMark(
                             x: .value("Tarih", day.date, unit: .day),
                             y: .value("Süre (dk)", day.duration / 60)
                         )
                     }
-                    .frame(height: 200)
+                    .frame(height: 150)
                 }
                 .padding()
                 .background(Color.orange.opacity(0.1))
                 .cornerRadius(10)
-
-                // Rozetler ve Başarılar
-                VStack {
-                    Text("Rozetler")
+                
+                // Rozetler
+                VStack(alignment: .leading) {
+                    Text("Kazanılan Rozetler")
                         .font(.headline)
-                    HStack {
-                        ForEach(1..<5) { index in
-                            Circle()
-                                .fill(Color.yellow)
-                                .frame(width: 50, height: 50)
-                            Text("Rozet \(index)")
-                                .font(.caption)
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack {
+                            ForEach(firestoreService.achievements, id: \.self) { badge in
+                                VStack {
+                                    Circle()
+                                        .fill(Color.yellow)
+                                        .frame(width: 50, height: 50)
+                                    Text(badge)
+                                        .font(.caption)
+                                }
+                                .padding()
+                            }
                         }
                     }
                 }
                 .padding()
                 .background(Color.purple.opacity(0.1))
                 .cornerRadius(10)
+                
+                // Fırçalama Geçmişi
+                VStack {
+                    Text("Fırçalama Geçmişi")
+                        .font(.headline)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color.gray.opacity(0.3))
+                        .frame(height: 150)
+                        .overlay(Text("Takvim"))
+                }
+                .padding()
+                .background(Color.gray.opacity(0.1))
+                .cornerRadius(10)
             }
             .padding()
         }
+        .navigationTitle("Dashboard")
         .onAppear {
             firestoreService.fetchBrushingData()
         }
     }
 }
+
 
 #Preview {
     DashboardView()
