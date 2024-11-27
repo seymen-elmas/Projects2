@@ -95,13 +95,8 @@ struct DashboardView: View {
                 firestoreService.fetchBrushingData()
             }
             .background( LinearGradient(
-                gradient: Gradient(colors: [
-                    Color(red: 162 / 255, green: 210 / 255, blue: 255 / 255),
-                    Color(red: 189 / 255, green: 224 / 255, blue: 254 / 255),
-                    Color(red: 255 / 255, green: 175 / 255, blue: 204 / 255),
-                    Color(red: 255 / 255, green: 200 / 255, blue: 221 / 255),
-                    Color(red: 205 / 255, green: 180 / 255, blue: 219 / 255)
-                ]),
+                gradient: Gradient(colors: [.mint,.cyan,.cyan,.mint]
+                ),
                 startPoint: .top,
                 endPoint: .bottom) )
         }
