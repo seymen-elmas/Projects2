@@ -45,6 +45,10 @@ struct LoginView: View {
                 }
             }
             .padding()
+            .background( LinearGradient(
+                gradient: Gradient(colors: [.mint,.cyan,.cyan,.mint]),
+                startPoint: .top,
+                endPoint: .bottom) )
         }
     }
     
