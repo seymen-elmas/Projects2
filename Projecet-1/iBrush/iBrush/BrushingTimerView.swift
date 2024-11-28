@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct BrushingTimerView: View {
-    @State private var timeRemaining = 120 // 120 saniyelik sayaç
+    @State private var timeRemaining = 120 
     @State private var timerRunning = false
     @ObservedObject var firestoreService: FirestoreService
 
@@ -47,7 +47,7 @@ struct BrushingTimerView: View {
         }
         .padding()
         .onDisappear {
-            timerRunning = false // Ekrandan çıkıldığında timer durdurulur
+            timerRunning = false
         }
     }
     
