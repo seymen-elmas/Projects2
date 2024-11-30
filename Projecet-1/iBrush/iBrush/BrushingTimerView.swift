@@ -9,8 +9,9 @@
 import SwiftUI
 
 struct BrushingTimerView: View {
-    @State private var timeRemaining = 120 
+    @State private var timeRemaining = 120
     @State private var timerRunning = false
+    @State private var timer: Timer? = nil
     @ObservedObject var firestoreService: FirestoreService
 
     var body: some View {
@@ -22,13 +23,13 @@ struct BrushingTimerView: View {
             Text("\(timeRemaining) saniye")
                 .font(.system(size: 40))
                 .padding()
-            
+
             HStack {
                 Button(action: toggleTimer) {
                     Text(timerRunning ? "Durdur" : "Başlat")
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(timerRunning ? Color.red : Color.green)
+                        .background(timerRunning ? Color.red : Color.blue)
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
@@ -47,18 +48,21 @@ struct BrushingTimerView: View {
         }
         .padding()
         .onDisappear {
-            timerRunning = false
+            timer?.invalidate()
         }
     }
     
     private func toggleTimer() {
-        timerRunning.toggle()
         if timerRunning {
-            Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+            timer?.invalidate()
+            timerRunning = false
+        } else {
+            timerRunning = true
+            timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
                 if timeRemaining > 0 {
                     timeRemaining -= 1
                 } else {
-                    timer.invalidate()
+                    timer?.invalidate()
                     timerRunning = false
                 }
             }
@@ -71,5 +75,19 @@ struct BrushingTimerView: View {
         timeRemaining = 120
     }
 }
+class MockFirestoreService: FirestoreService {
+    override init() {
+        super.init()
+        // Önizleme için test verileri
+        self.userName = "Test Kullanıcı"
+        self.dailyBrushingTime = 90
+        self.brushingDays = [
+            BrushingDay(id: "1", date: Date(), duration: 120),
+            BrushingDay(id: "2", date: Date().addingTimeInterval(-86400), duration: 80)
+        ]
+    }
+}
 
-
+#Preview {
+    BrushingTimerView(firestoreService: MockFirestoreService())
+}

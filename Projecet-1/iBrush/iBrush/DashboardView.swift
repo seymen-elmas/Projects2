@@ -7,11 +7,12 @@
 
 import SwiftUI
 import Charts
+
 struct DashboardView: View {
     @ObservedObject var firestoreService = FirestoreService()
     
     var body: some View {
-        ZStack{
+        NavigationView {
             ScrollView {
                 VStack(spacing: 20) {
                     // Kullanıcı Bilgileri
@@ -19,20 +20,14 @@ struct DashboardView: View {
                         Text("Hoşgeldin, \(firestoreService.userName)")
                             .font(.headline)
                         Spacer()
+                        Text("\(firestoreService.dailyBrushingTime) dk")
+                            .font(.subheadline)
+                            .padding(8)
+                            .background(Color.cyan.opacity(0.2))
+                            .cornerRadius(8)
                     }
                     .padding()
                     .background(Color.cyan.opacity(0.1))
-                    .cornerRadius(10)
-                    
-                    // Fırçalama Süresi
-                    HStack {
-                        Text("Bugün Fırçalama Süresi")
-                            .font(.headline)
-                        Spacer()
-                        Text("\(firestoreService.dailyBrushingTime) dk")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
                     .cornerRadius(10)
                     
                     // Başarı Grafiği
@@ -73,20 +68,6 @@ struct DashboardView: View {
                     .padding()
                     .background(Color.purple.opacity(0.1))
                     .cornerRadius(10)
-                    
-                    // Fırçalama Geçmişi
-                    VStack {
-                        Text("Fırçalama Geçmişi")
-                            .font(.headline)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(Color.gray.opacity(0.3))
-                            .frame(height: 150)
-                            .overlay(Text("Takvim"))
-                    }
-                    .padding()
-                    .background(Color.gray.opacity(0.1))
-                    .cornerRadius(10)
                 }
                 .padding()
             }
@@ -94,15 +75,13 @@ struct DashboardView: View {
             .onAppear {
                 firestoreService.fetchBrushingData()
             }
-            .background( LinearGradient(
-                gradient: Gradient(colors: [.mint,.cyan,.gray,.cyan,.mint]
-                ),
+            .background(LinearGradient(
+                gradient: Gradient(colors: [.mint, .cyan, .gray, .cyan, .mint]),
                 startPoint: .top,
-                endPoint: .bottom) )
+                endPoint: .bottom))
         }
     }
 }
-
 
 #Preview {
     DashboardView()
