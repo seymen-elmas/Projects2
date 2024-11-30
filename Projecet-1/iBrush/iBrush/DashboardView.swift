@@ -10,7 +10,7 @@ import Charts
 
 struct DashboardView: View {
     @ObservedObject var firestoreService = FirestoreService()
-    
+
     var body: some View {
         NavigationView {
             ScrollView {
@@ -20,16 +20,24 @@ struct DashboardView: View {
                         Text("Hoşgeldin, \(firestoreService.userName)")
                             .font(.headline)
                         Spacer()
-                        Text("\(firestoreService.dailyBrushingTime) dk")
-                            .font(.subheadline)
-                            .padding(8)
-                            .background(Color.cyan.opacity(0.2))
-                            .cornerRadius(8)
+                        VStack{
+                            Text("Bugün: \(firestoreService.dailyBrushingTime) saniye")
+                                .font(.subheadline)
+                            NavigationLink(destination: BrushingTimerView(firestoreService: firestoreService)) {
+                                Text("+")
+                                    .frame(width:10,height: 10,alignment: .bottom)
+                                    .padding()
+                                    .background(Color.green)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(100)
+                            }
+                          
+                        }
                     }
                     .padding()
                     .background(Color.cyan.opacity(0.1))
                     .cornerRadius(10)
-                    
+                      
                     // Başarı Grafiği
                     VStack {
                         Text("Başarı Grafiği")
@@ -40,12 +48,12 @@ struct DashboardView: View {
                                 y: .value("Süre (dk)", day.duration / 60)
                             )
                         }
-                        .frame(height: 150)
+                        .frame(height: 100)
                     }
                     .padding()
                     .background(Color.orange.opacity(0.1))
                     .cornerRadius(10)
-                    
+
                     // Rozetler
                     VStack(alignment: .leading) {
                         Text("Kazanılan Rozetler")
@@ -68,6 +76,23 @@ struct DashboardView: View {
                     .padding()
                     .background(Color.purple.opacity(0.1))
                     .cornerRadius(10)
+
+                    // Fırçalama Ekle Düğmesi
+           
+
+                    // Fırçalama Geçmişi
+                    VStack {
+                        Text("Fırçalama Geçmişi")
+                            .font(.headline)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(Color.gray.opacity(0.3))
+                            .frame(height: 100)
+                            .overlay(Text("Takvim"))
+                    }
+                    .padding()
+                    .background(Color.gray.opacity(0.1))
+                    .cornerRadius(10)
                 }
                 .padding()
             }
@@ -75,13 +100,17 @@ struct DashboardView: View {
             .onAppear {
                 firestoreService.fetchBrushingData()
             }
-            .background(LinearGradient(
-                gradient: Gradient(colors: [.mint, .cyan, .gray, .cyan, .mint]),
-                startPoint: .top,
-                endPoint: .bottom))
+            .background(
+                LinearGradient(
+                    gradient: Gradient(colors: [.mint, .cyan, .gray, .cyan, .mint]),
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+            )
         }
     }
 }
+
 
 #Preview {
     DashboardView()
