@@ -7,7 +7,7 @@
 
 import SwiftUI
 import FirebaseCore
-
+import Firebase
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
@@ -19,7 +19,10 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct iBrushApp: App {
       @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-
+    func configureAppCheck() {
+        let providerFactory = AppCheckDebugProviderFactory()
+        AppCheck.setAppCheckProviderFactory(providerFactory)
+    }
       var body: some Scene {
         WindowGroup {
           NavigationView {
