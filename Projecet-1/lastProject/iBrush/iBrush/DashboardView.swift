@@ -10,35 +10,55 @@ import Charts
 
 struct DashboardView: View {
     @ObservedObject var firestoreService = FirestoreService()
+    @State private var showEditUserNameView = false
 
     var body: some View {
         NavigationView {
             ScrollView {
                 VStack(spacing: 20) {
-                    // Kullanıcı Bilgileri
                     HStack {
-                        Text("Hoşgeldin, \(firestoreService.userName)")
-                            .font(.headline)
+                        VStack(alignment: .leading) {
+                            Text("Hoşgeldin,")
+                                .font(.subheadline)
+                            Text(firestoreService.userName)
+                                .font(.headline)
+                            Button(action: {
+                                showEditUserNameView.toggle()
+                            }) {
+                                Text("Düzenle")
+                                    .font(.subheadline)
+                                    .foregroundColor(.white)
+                                    .padding(5)
+                                    .frame(width:105, height:30)
+                                    .background(Color.indigo.opacity(0.2))
+                                    .cornerRadius(10)
+                            }
+                           
+                        }
                         Spacer()
                         VStack{
-                            Text("Bugün: \(firestoreService.dailyBrushingTime) saniye")
-                                .font(.subheadline)
+                          Text("Bugün")
+                            .font(.subheadline)
+                            Text("\(firestoreService.dailyBrushingTime) dk")
+                            .font(.headline)
+                            
                             NavigationLink(destination: BrushingTimerView(firestoreService: firestoreService)) {
-                                Text("+")
-                                    .frame(width:10,height: 10,alignment: .bottom)
-                                    .padding()
-                                    .background(Color.green)
+                                Text("Süre Ekle")
+                                    .frame(maxWidth: .infinity)
+                                    .padding(5)
+                                    .background(Color.indigo.opacity(0.2))
                                     .foregroundColor(.white)
-                                    .cornerRadius(100)
+                                    .cornerRadius(10)
+                                    .frame(width:105, height:0.5)
+                                    .padding()
                             }
-                          
                         }
+                  
                     }
                     .padding()
                     .background(Color.cyan.opacity(0.1))
                     .cornerRadius(10)
-                      
-                    // Başarı Grafiği
+
                     VStack {
                         Text("Başarı Grafiği")
                             .font(.headline)
@@ -48,65 +68,35 @@ struct DashboardView: View {
                                 y: .value("Süre (dk)", day.duration / 60)
                             )
                         }
-                        .frame(height: 100)
+                        .frame(height: 150)
                     }
                     .padding()
                     .background(Color.orange.opacity(0.1))
                     .cornerRadius(10)
 
-                    // Rozetler
-                    VStack(alignment: .leading) {
-                        Text("Kazanılan Rozetler")
-                            .font(.headline)
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack {
-                                ForEach(firestoreService.achievements, id: \.self) { badge in
-                                    VStack {
-                                        Circle()
-                                            .fill(Color.yellow)
-                                            .frame(width: 50, height: 50)
-                                        Text(badge)
-                                            .font(.caption)
-                                    }
-                                    .padding()
-                                }
-                            }
-                        }
+                    NavigationLink(destination: AchievementsView(firestoreService: firestoreService)) {
+                        Text("Tüm Rozetler")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(LinearGradient(colors: [.green,.mint,.green], startPoint: .leading, endPoint: .trailing))
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
                     }
                     .padding()
-                    .background(Color.purple.opacity(0.1))
-                    .cornerRadius(10)
 
-                    // Fırçalama Ekle Düğmesi
-           
-
-                    // Fırçalama Geçmişi
-                    VStack {
-                        Text("Fırçalama Geçmişi")
-                            .font(.headline)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(Color.gray.opacity(0.3))
-                            .frame(height: 100)
-                            .overlay(Text("Takvim"))
-                    }
-                    .padding()
-                    .background(Color.gray.opacity(0.1))
-                    .cornerRadius(10)
+                   
                 }
                 .padding()
             }
             .navigationTitle("Dashboard")
             .onAppear {
                 firestoreService.fetchBrushingData()
+                firestoreService.fetchUserName()
             }
-            .background(
-                LinearGradient(
-                    gradient: Gradient(colors: [.mint, .cyan, .gray, .cyan, .mint]),
-                    startPoint: .top,
-                    endPoint: .bottom
-                )
-            )
+            .sheet(isPresented: $showEditUserNameView) {
+                EditUserNameView(firestoreService: firestoreService)
+            }
+            .background(LinearGradient(colors: [.green,.mint,.cyan,.mint], startPoint: .topLeading, endPoint: .bottomTrailing))
         }
     }
 }
