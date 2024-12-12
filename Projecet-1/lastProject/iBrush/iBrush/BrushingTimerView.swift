@@ -47,9 +47,11 @@ struct BrushingTimerView: View {
             }
         }
         .padding()
+        .background(LinearGradient(colors: [.green,.mint,.cyan,.mint], startPoint: .topLeading, endPoint: .bottomTrailing))
         .onDisappear {
             timer?.invalidate()
         }
+    
     }
     
     private func toggleTimer() {

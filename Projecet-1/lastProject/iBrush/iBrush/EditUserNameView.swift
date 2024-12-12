@@ -37,6 +37,7 @@ struct EditUserNameView: View {
             }
         }
         .padding()
+        .background(LinearGradient(colors: [.green,.mint,.cyan,.mint], startPoint: .topLeading, endPoint: .bottomTrailing))
         .onAppear {
             newName = firestoreService.userName
         }
