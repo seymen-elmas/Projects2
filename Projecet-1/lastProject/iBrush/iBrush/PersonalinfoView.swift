@@ -40,11 +40,23 @@ struct PersonalInfoView: View {
                     }
                 }
 
-                HStack {
-                    Text("Toplam Süre:")
-                        .font(.headline)
-                    Text("\(firestoreService.totalBrushingTime / 60) dk")
-                        .font(.body)
+                VStack{
+                    HStack {
+                        Text("Toplam Süre:")
+                            .font(.headline)
+                        Text("\(firestoreService.totalBrushingTime / 60) dk")
+                            .font(.body)
+                    }
+                    NavigationLink(destination: BrushingTimerView(firestoreService: firestoreService)) {
+                      Text("Süre Ekle")
+                        .frame(maxWidth: .infinity)
+                        .padding(5)
+                        .background(Color.indigo.opacity(0.2))
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        .frame(width:105, height:0.5)
+                        .padding()
+                    }
                 }
             }
             .padding()
@@ -53,6 +65,7 @@ struct PersonalInfoView: View {
 
             Spacer()
         }
+        .background(LinearGradient(colors: [.green,.mint,.cyan,.mint], startPoint: .topLeading, endPoint: .bottomTrailing))
         .onAppear {
             firestoreService.calculateTotalBrushingTime()
         }

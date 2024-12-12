@@ -16,51 +16,42 @@ struct DashboardView: View {
         NavigationView {
             ScrollView {
               VStack(spacing: 20) {
-                HStack {
-                  VStack(alignment: .leading) {
-                    Text("Hoşgeldin,")
-                      .font(.subheadline)
-                    Text(firestoreService.userName)
-                      .font(.headline)
-                   
-                      //123
-                      NavigationLink(destination: PersonalInfoView(firestoreService: firestoreService)) {
-                        Text("Kişisel Bilgiler")
-                          .frame(width:105, height:0.5,alignment:.leading)
-                          .padding()
-                          .background(Color.indigo.opacity(0.5))
-                          .foregroundColor(.white)
-                          .cornerRadius(10)
+                VStack {
+                  HStack {
+                    VStack(alignment: .leading) {
+                      Text("Hoşgeldin,")
+                        .font(.subheadline)
+                      Text(firestoreService.userName)
+                        .font(.headline)
+                      
+                    }
+                    Spacer()
+                    VStack{
+                      Text("Bugün")
+                        .font(.subheadline)
+                      Text("\(firestoreService.dailyBrushingTime) dk")
+                        .font(.headline)
                       
                       
                     }
-                    .padding()
-                
                     
-                  }
-                  Spacer()
-                  VStack{
-                    Text("Bugün")
-                      .font(.subheadline)
-                    Text("\(firestoreService.dailyBrushingTime) dk")
-                      .font(.headline)
-                    
-                    NavigationLink(destination: BrushingTimerView(firestoreService: firestoreService)) {
-                      Text("Süre Ekle")
-                        .frame(maxWidth: .infinity)
-                        .padding(5)
-                        .background(Color.indigo.opacity(0.2))
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                        .frame(width:105, height:0.5)
-                        .padding()
-                    }
-                  }
+                  }       //123
+                  NavigationLink(destination: PersonalInfoView(firestoreService: firestoreService)) {
+                    Text("Kişisel Bilgileri Düzenle")
+                      .frame(width:.infinity, height:0.5)
+                      .padding()
+                      .background((LinearGradient(colors: [.cyan,.blue,.cyan], startPoint: .leading, endPoint: .trailing).opacity(0.5)))
+                      .foregroundColor(.white)
+                      .cornerRadius(10)
+                  
                   
                 }
-                .padding()
-                .background(Color.cyan.opacity(0.1))
-                .cornerRadius(10)
+            
+                  .padding()
+                  .background(Color.gray.opacity(0.2))
+                  .cornerRadius(10)
+                
+                }
                 
                 VStack {
                   Text("Başarı Grafiği")
@@ -101,7 +92,7 @@ struct DashboardView: View {
               }
                                  .padding()
                              }
-            .navigationTitle("Dashboard")
+            .navigationTitle("Ana Sayfa")
             .onAppear {
                 firestoreService.fetchBrushingData()
                 firestoreService.fetchUserName()
