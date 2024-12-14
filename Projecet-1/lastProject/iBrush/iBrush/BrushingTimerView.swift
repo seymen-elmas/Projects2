@@ -47,6 +47,7 @@ struct BrushingTimerView: View {
             }
         }
         .padding()
+        .frame(width:.infinity,height: .infinity)
         .background(LinearGradient(colors: [.green,.mint,.cyan,.mint], startPoint: .topLeading, endPoint: .bottomTrailing))
         .onDisappear {
             timer?.invalidate()
