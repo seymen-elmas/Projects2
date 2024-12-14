@@ -12,8 +12,9 @@ import FirebaseAuth
 struct BrushingDay: Identifiable {
     var id: String
     var date: Date
-    var duration: Int
+    var duration: Int // Duration in seconds
 }
+
 
 class FirestoreService: ObservableObject {
     @Published var brushingDays: [BrushingDay] = []
