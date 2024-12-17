@@ -9,10 +9,9 @@
 import SwiftUI
 
 struct BrushingTimerView: View {
+    @ObservedObject var firestoreService: FirestoreService
     @State private var timeRemaining = 120
     @State private var timerRunning = false
-    @State private var timer: Timer? = nil
-    @ObservedObject var firestoreService: FirestoreService
 
     var body: some View {
         VStack(spacing: 20) {
@@ -29,11 +28,11 @@ struct BrushingTimerView: View {
                     Text(timerRunning ? "Durdur" : "Başlat")
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(timerRunning ? Color.red : Color.blue)
+                        .background(timerRunning ? Color.red : Color.green)
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
-                
+
                 if timeRemaining < 120 && !timerRunning {
                     Button(action: saveBrushingTime) {
                         Text("Kaydet")
@@ -47,37 +46,30 @@ struct BrushingTimerView: View {
             }
         }
         .padding()
-        .frame(width:.infinity,height: .infinity)
-        .background(LinearGradient(colors: [.green,.mint,.cyan,.mint], startPoint: .topLeading, endPoint: .bottomTrailing))
-        .onDisappear {
-            timer?.invalidate()
-        }
-    
     }
-    
+
     private func toggleTimer() {
+        timerRunning.toggle()
         if timerRunning {
-            timer?.invalidate()
-            timerRunning = false
-        } else {
-            timerRunning = true
-            timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+            Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
                 if timeRemaining > 0 {
                     timeRemaining -= 1
                 } else {
-                    timer?.invalidate()
+                    timer.invalidate()
                     timerRunning = false
                 }
             }
         }
     }
-    
+
     private func saveBrushingTime() {
         let brushingDuration = 120 - timeRemaining
         firestoreService.saveBrushingTime(duration: brushingDuration)
         timeRemaining = 120
     }
 }
+
+
 class MockFirestoreService: FirestoreService {
     override init() {
         super.init()

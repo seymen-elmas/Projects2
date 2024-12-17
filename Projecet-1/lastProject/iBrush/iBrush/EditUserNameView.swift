@@ -2,17 +2,15 @@
 //  EditUserNameView.swift
 //  iBrush
 //
-//  Created by Seymen Nadir Elmas on 9.12.2024.
+//  Created by Seymen Nadir Elmas on 17.12.2024.
 //
-
 
 import SwiftUI
 
 struct EditUserNameView: View {
     @ObservedObject var firestoreService: FirestoreService
-    @State private var newName: String = ""
-
-    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.dismiss) var dismiss
+    @State private var newUserName: String = ""
 
     var body: some View {
         VStack(spacing: 20) {
@@ -20,26 +18,41 @@ struct EditUserNameView: View {
                 .font(.largeTitle)
                 .bold()
 
-            TextField("Yeni Kullanıcı Adı", text: $newName)
+            TextField("Yeni Kullanıcı Adı", text: $newUserName)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
 
-            Button(action: {
-                firestoreService.updateUserName(newName: newName)
-                presentationMode.wrappedValue.dismiss()
-            }) {
-                Text("Kaydet")
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color.green)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+            HStack {
+                Button(action: {
+                    dismiss()
+                }) {
+                    Text("İptal")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.red)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+
+                Button(action: {
+                    firestoreService.saveUserName(newUserName)
+                    dismiss()
+                }) {
+                    Text("Kaydet")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.green)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
             }
+            .padding()
         }
         .padding()
-        .background(LinearGradient(colors: [.green,.mint,.cyan,.mint], startPoint: .topLeading, endPoint: .bottomTrailing))
-        .onAppear {
-            newName = firestoreService.userName
-        }
     }
+}
+
+
+#Preview {
+    EditUserNameView(firestoreService: FirestoreService())
 }

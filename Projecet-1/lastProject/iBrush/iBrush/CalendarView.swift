@@ -2,9 +2,8 @@
 //  CalendarView.swift
 //  iBrush
 //
-//  Created by Seymen Nadir Elmas on 12.12.2024.
+//  Created by Seymen Nadir Elmas on 14.12.2024.
 //
-
 
 import SwiftUI
 
@@ -41,3 +40,6 @@ extension Date {
         Calendar.current.startOfDay(for: self)
     }
 }
+
+
+

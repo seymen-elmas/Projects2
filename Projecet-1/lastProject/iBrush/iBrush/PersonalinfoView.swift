@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PersonalInfoView: View {
+struct PersonalinfoView: View {
     @ObservedObject var firestoreService: FirestoreService
     @State private var showEditUserNameView = false
 
@@ -44,7 +44,8 @@ struct PersonalInfoView: View {
                     HStack {
                         Text("Toplam Süre:")
                             .font(.headline)
-                        Text("\(firestoreService.totalBrushingTime / 60) dk")
+                        Text("\(firestoreService.dailyBrushingTime) saniye")
+                                                        .font(.headline)
                             .font(.body)
                     }
                     NavigationLink(destination: BrushingTimerView(firestoreService: firestoreService)) {
@@ -67,7 +68,7 @@ struct PersonalInfoView: View {
         }
         .background(LinearGradient(colors: [.green,.mint,.cyan,.mint], startPoint: .topLeading, endPoint: .bottomTrailing))
         .onAppear {
-            firestoreService.calculateTotalBrushingTime()
+            firestoreService.fetchBrushingData()
         }
         .padding()
     }

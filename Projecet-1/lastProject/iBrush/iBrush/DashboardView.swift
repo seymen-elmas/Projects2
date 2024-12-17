@@ -36,9 +36,9 @@ struct DashboardView: View {
                     }
                     
                   }       //123
-                  NavigationLink(destination: PersonalInfoView(firestoreService: firestoreService)) {
+                  NavigationLink(destination: PersonalinfoView(firestoreService: firestoreService)) {
                     Text("Kişisel Bilgileri Düzenle")
-                      .frame(width:.infinity, height:0.5)
+                      .frame(width:.infinity, height:10)
                       .padding()
                       .background((LinearGradient(colors: [.cyan,.blue,.cyan], startPoint: .leading, endPoint: .trailing).opacity(0.5)))
                       .foregroundColor(.white)
@@ -54,20 +54,20 @@ struct DashboardView: View {
                 }
                 
                 VStack {
-                  Text("Başarı Grafiği")
-                    .font(.headline)
-                  Chart(firestoreService.brushingDays) { day in
-                    BarMark(
-                      x: .value("Tarih", day.date, unit: .day),
-                      y: .value("Süre (dk)", day.duration / 60)
-                    )
-                  }
-                  .frame(height: 150)
-                }
-                .padding()
-                .background(Color.orange.opacity(0.1))
-                .cornerRadius(10)
-                
+                                        Text("Başarı Grafiği")
+                                            .font(.headline)
+                                        Chart(firestoreService.brushingDays) { day in
+                                            BarMark(
+                                                x: .value("Tarih", day.date, unit: .day),
+                                                y: .value("Süre (saniye)", day.duration)
+                                            )
+                                        }
+                                        .frame(height: 150)
+                                    }
+                                    .padding()
+                                    .background(Color.orange.opacity(0.1))
+                                    .cornerRadius(10)
+
                 NavigationLink(destination: AchievementsView(firestoreService: firestoreService)) {
                   Text("Tüm Rozetler")
                     .frame(maxWidth: .infinity)
